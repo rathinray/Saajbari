@@ -134,8 +134,7 @@ const Services = () => {
               if (service.href) {         
                 return (
                   <Link
-                   
-                    onClick={() => window.location.href = service.href}
+                    to={service.href}
                     key={service.title}
                     ref={(el) => (cardsRef.current[idx] = el)}
                     className="service-card bg-white p-8 rounded-lg shadow-md transition-all duration-300 hover:border-primary border border-transparent"
