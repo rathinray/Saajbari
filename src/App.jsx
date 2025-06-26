@@ -1,4 +1,4 @@
-import { BrowserRouter as Router, Routes, Route, Navigate } from 'react-router-dom';
+import { BrowserRouter as Router, Routes, Route, Navigate, HashRouter } from 'react-router-dom';
 import Catering from './assets/pages/Catering';
 import HomePage from './assets/pages/HomePage';
 import MenuPage from './assets/pages/MenuPage';
@@ -12,10 +12,11 @@ import '@fortawesome/fontawesome-free/css/all.min.css';
 
 
 
+
 function App() {
   return (
     
-    
+    <HashRouter>
       <Routes>
      
         <Route path="/" element={<HomePage />} />
@@ -29,7 +30,7 @@ function App() {
         <Route path="/corporate-events" element={<CorporateEvents />} />
 
       </Routes>
-   
+    </HashRouter>
   );
 }
 
