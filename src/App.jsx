@@ -15,12 +15,11 @@ import '@fortawesome/fontawesome-free/css/all.min.css';
 function App() {
   return (
     
-    <Router>
-      
+    
       <Routes>
      
         <Route path="/Saajbari/" element={<HomePage />} />
-        <Route path="/Saajbari//catering-services" element={<Catering />} />
+        <Route path="/Saajbari/catering-services" element={<Catering />} />
         <Route path="/Saajbari/wedding-menu" element={<MenuPage />} />
         <Route path="/Saajbari/wedding-spin-wheel" element={<WeddingSpinWheel />} />
         <Route path="/Saajbari/bride-groom-qna" element={<BrideGroomQnA />} />
@@ -30,7 +29,7 @@ function App() {
         <Route path="/Saajbari/corporate-events" element={<CorporateEvents />} />
 
       </Routes>
-    </Router>
+   
   );
 }
 
