@@ -1,0 +1,28 @@
+@import "tailwindcss";
+html{
+  scroll-behavior: smooth;
+}
+
+@config "../tailwind.config.js";
+
+@layer base {
+  :root {
+    --color-primary: #D4AF37;
+    --color-secondary: #F8F3E6;
+    --color-accent: #E8C4C4;
+    --color-dark: #1A1A1A;
+  }
+}
+
+@layer components {
+  .btn {
+    @apply bg-primary text-white px-4 py-2 rounded-md hover:bg-accent transition-colors;
+  }
+}
+
+@layer utilities {
+  .text-primary {
+    @apply text-primary;
+  }
+}
+  
