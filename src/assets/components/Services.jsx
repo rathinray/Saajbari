@@ -13,7 +13,7 @@ const services = [
       "Exquisite wedding decor that tells your unique love story with elegance and sophistication.",
     delay: "",
     as: "div",
-    href: "/wedding-decoration",
+    href: "/Saajbari/wedding-decoration",
   },
   {
     icon: "fas fa-birthday-cake",
@@ -22,7 +22,7 @@ const services = [
       "Custom birthday parties that reflect personality and create lasting memories for all ages.",
     delay: "animate-delay-100",
     as: "div",
-    href: "/birthday-celebration",
+    href: "/Saajbari/birthday-celebration",
   },
   {
     icon: "fas fa-glass-cheers",
@@ -31,7 +31,7 @@ const services = [
       "Professional event planning for corporate gatherings that impress clients and employees alike.",
     delay: "animate-delay-200",
     as: "div",
-    href: "/corporate-events",
+    href: "/Saajbari/corporate-events",
   },
   {
     icon: "fas fa-utensils",
@@ -40,7 +40,7 @@ const services = [
       "Gourmet catering options tailored to your event's theme and your guests' preferences.",
     delay: "",
     as: "a",
-    href: "/catering-services",
+    href: "/Saajbari/catering-services",
     
   },
   {
@@ -50,7 +50,7 @@ const services = [
       "Professional documentation of your special moments with artistic photography and videography.",
     delay: "animate-delay-100",
     as: "div",
-    href: "/photography-video",
+    href: "/Saajbari/photography-video",
   },
   {
     icon: "fas fa-lightbulb",
@@ -59,7 +59,7 @@ const services = [
       "Unique, personalized event themes designed exclusively for your celebration.",
     delay: "animate-delay-200",
     as: "div",
-    href: "/custom-themes",
+    href: "/Saajbari/custom-themes",
   },
 ];
 

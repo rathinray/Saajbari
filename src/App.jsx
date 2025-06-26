@@ -19,15 +19,15 @@ function App() {
       
       <Routes>
      
-        <Route path="/" element={<HomePage />} />
-        <Route path="/catering-services" element={<Catering />} />
-        <Route path="/wedding-menu" element={<MenuPage />} />
-        <Route path="/wedding-spin-wheel" element={<WeddingSpinWheel />} />
-        <Route path="/bride-groom-qna" element={<BrideGroomQnA />} />
-        <Route path="/rice-ceremony-quiz" element={<RiceCeremonyQuiz />} />
-        <Route path="/wedding-decoration" element={<WeddingDecoration />} />
-        <Route path="/birthday-celebration" element={<BirthdayCelebration />} />
-        <Route path="/corporate-events" element={<CorporateEvents />} />
+        <Route path="/Saajbari/" element={<HomePage />} />
+        <Route path="/Saajbari//catering-services" element={<Catering />} />
+        <Route path="/Saajbari/wedding-menu" element={<MenuPage />} />
+        <Route path="/Saajbari/wedding-spin-wheel" element={<WeddingSpinWheel />} />
+        <Route path="/Saajbari/bride-groom-qna" element={<BrideGroomQnA />} />
+        <Route path="/Saajbari/rice-ceremony-quiz" element={<RiceCeremonyQuiz />} />
+        <Route path="/Saajbari/wedding-decoration" element={<WeddingDecoration />} />
+        <Route path="/Saajbari/birthday-celebration" element={<BirthdayCelebration />} />
+        <Route path="/Saajbari/corporate-events" element={<CorporateEvents />} />
 
       </Routes>
     </Router>
