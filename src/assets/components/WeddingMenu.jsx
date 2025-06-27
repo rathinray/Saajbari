@@ -2,8 +2,6 @@ import React, { useEffect, useRef, useMemo } from "react";
 import gsap from "gsap";
 import { Link } from "react-router-dom";
 import { ScrollTrigger } from "gsap/ScrollTrigger";
-import Lenis from 'lenis'
-gsap.registerPlugin(ScrollTrigger);
 
 const NUM_FIRECRACKERS = 18;
 
@@ -118,43 +116,6 @@ const WeddingMenu = () => {
     };
     type();
   }, []);
-  useEffect(() => {
-    // Smooth Scroll Setup
-    const lenis = new Lenis({
-      smooth: true,
-      lerp: 0.08,
-    });
-
-    function raf(time) {
-      lenis.raf(time);
-      requestAnimationFrame(raf);
-    }
-    requestAnimationFrame(raf);
-
-    lenis.on('scroll', ScrollTrigger.update);
-
-    // ScrollTrigger Animation
-    gsap.to("#movingElement", {
-      y: () => {
-        const target = document.querySelector("#targetElement");
-        const targetOffsetTop = target.getBoundingClientRect().top + window.scrollY;
-        return targetOffsetTop - 60; // Adjusted to align with the top of the target
-      },
-      ease: "none",
-      scrollTrigger: {
-        trigger: "#movingElement",
-        start: "top top",
-        endTrigger: "#targetElement",
-        end: "top top", // Stop when top of movingElement reaches top of targetElement
-        scrub: true,
-      }
-    });
-
-    return () => {
-      lenis.destroy();
-    };
-  }, []);
-
 
   return (
     <div className="min-h-screen bg-pink-50 flex flex-col items-center p-4" style={{ position: "relative", zIndex: 1 }}>
@@ -229,7 +190,7 @@ const WeddingMenu = () => {
      
         <h1 className="text-xl font-bold text-pink-700 mb-4">🙏 Sorry for the Little Delay!</h1>
         <p className="text-gray-700 text-lg mb-2">Our catering team is on the way 🍽️</p>
-        <p className="text-gray-700 text-lg">Meanwhile, please enjoy the fun activities we’ve prepared for you 🎉</p>
+        <p className="text-gray-700 text-lg">Meanwhile, please enjoy the fun activities we've prepared for you 🎉</p>
         <div className="flex justify-between">
         <Link to="/wedding-spin-wheel" className="inline-block bg-pink-700 text-white px-4 py-2 mt-4 rounded-full shadow-lg animate-bounce">
   🎮 Play a Game

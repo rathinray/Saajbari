@@ -19,7 +19,12 @@ const Hero = () => (
         </p>
         <div className="flex flex-col sm:flex-row gap-4 animate-slide-up animate-delay-200">
           <a
-            href="#contact"
+            onClick={() => {
+              const section = document.getElementById('contact');
+              if (section) {
+                section.scrollIntoView({ behavior: 'smooth' });
+              }
+            }}
             className="bg-primary hover:bg-opacity-90 text-white px-8 py-3 rounded-full text-center font-medium transition-all group relative overflow-hidden"
           >
             <span
@@ -30,7 +35,12 @@ const Hero = () => (
             </span>
           </a>
           <a
-            href="#services"
+            onClick={() => {
+              const section = document.getElementById('services');
+              if (section) {
+                section.scrollIntoView({ behavior: 'smooth' });
+              }
+            }}
             className="border border-white hover:bg-white hover:text-dark px-8 py-3 rounded-full text-center font-medium transition-all"
           >
             Our Services

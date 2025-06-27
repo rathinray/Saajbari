@@ -134,7 +134,7 @@ const WeddingSpinWheel = () => {
         Spin Now 🎉
       </button>
 
-      <Link to="/wedding-menu"
+      <Link to="/wedding-menu-bangla"
         // 👈 Route to your main page
         className="fixed bottom-6 right-6 bg-yellow-500 text-white p-4 rounded-full shadow-lg hover:bg-yellow-600 transition-all z-20"
       >

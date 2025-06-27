@@ -47,7 +47,7 @@ const Footer = () => (
           <ul className="space-y-2">
             <li>
               <a
-                href="#home"
+                href="/"
                 className="text-gray-400 hover:text-primary transition-colors"
               >
                 Home
@@ -55,7 +55,14 @@ const Footer = () => (
             </li>
             <li>
               <a
-                href="#services"
+               onClick={() => {
+                
+                const section = document.getElementById('services');
+                if (section) {
+                 
+                  section.scrollIntoView({ behavior: 'smooth' });
+                }
+              }}
                 className="text-gray-400 hover:text-primary transition-colors"
               >
                 Services
@@ -73,7 +80,12 @@ const Footer = () => (
             */}
             <li>
               <a
-                href="#about"
+                onClick={() => {
+                  const section = document.getElementById('about');
+                  if (section) {
+                    section.scrollIntoView({ behavior: 'smooth' });
+                  }
+                }}
                 className="text-gray-400 hover:text-primary transition-colors"
               >
                 About Us
@@ -81,7 +93,12 @@ const Footer = () => (
             </li>
             <li>
               <a
-                href="#contact"
+                onClick={() => {
+                  const section = document.getElementById('contact');
+                  if (section) {
+                    section.scrollIntoView({ behavior: 'smooth' });
+                  }
+                }}
                 className="text-gray-400 hover:text-primary transition-colors"
               >
                 Contact

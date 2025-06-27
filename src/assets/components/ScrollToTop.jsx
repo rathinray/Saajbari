@@ -1,20 +1,28 @@
 import { useEffect } from 'react';
-import { useLocation } from 'react-router-dom';
+import { useLocation, useNavigationType } from 'react-router-dom';
 
 export default function ScrollToTop() {
   const { pathname } = useLocation();
+  const navigationType = useNavigationType();
 
   useEffect(() => {
-    // Scroll immediately
-    window.scrollTo(0, 0);
-
-    // Ensure scroll after rendering completes
-    const timer = setTimeout(() => {
-      window.scrollTo(0, 0);
-    }, 400); // You can adjust the delay if needed
-
-    return () => clearTimeout(timer);
-  }, [pathname]);
+    if (navigationType === 'PUSH' || navigationType === 'REPLACE') {
+      if (window.lenis && typeof window.lenis.scrollTo === 'function') {
+        window.lenis.scrollTo(0, { immediate: true });
+      } else {
+        window.scrollTo(0, 0);
+      }
+      const timer = setTimeout(() => {
+        if (window.lenis && typeof window.lenis.scrollTo === 'function') {
+          window.lenis.scrollTo(0, { immediate: false, duration: 1 });
+        } else {
+          window.scrollTo(0, 0);
+        }
+      }, 400);
+      return () => clearTimeout(timer);
+    }
+    // If navigationType is 'POP', do nothing (let browser restore scroll)
+  }, [pathname, navigationType]);
 
   return null;
 }

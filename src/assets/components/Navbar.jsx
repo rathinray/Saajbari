@@ -1,4 +1,4 @@
-import { useState } from 'react'
+import { useState, useRef } from 'react'
 
 function Navbar() {
   const [isMobileMenuOpen, setIsMobileMenuOpen] = useState(false)
@@ -10,6 +10,9 @@ function Navbar() {
   const handleMobileLinkClick = () => {
     setIsMobileMenuOpen(false)
   }
+  const servicesRef = useRef(null);
+  const aboutRef = useRef(null);
+  const contactRef = useRef(null);
 
   return (
     <nav className="fixed w-full bg-white/90 backdrop-blur-md shadow-sm z-50 transition-all duration-300">
@@ -25,7 +28,8 @@ function Navbar() {
             </a>
           </div>
 
-          {/* Desktop Menu */}
+        
+
           <div className="hidden md:block">
             <div className="ml-10 flex items-center space-x-8">
               <a
@@ -35,29 +39,47 @@ function Navbar() {
                 Home
                 <span className="absolute left-1/2 bottom-0 w-0 h-[2px] bg-primary transition-all duration-300 group-hover:left-0 group-hover:w-full"></span>
               </a>
-              <a
-                href="/Saajbari/#services"
-                className="nav-link px-3 rounded-md text-sm font-medium relative overflow-hidden group"
+              <button
+                type="button"
+                className="nav-link px-3 rounded-md text-sm font-medium relative overflow-hidden group bg-transparent border-none outline-none cursor-pointer"
+                onClick={() => {
+                  const section = document.getElementById('services');
+                  if (section) {
+                    section.scrollIntoView({ behavior: 'smooth' });
+                  }
+                }}
               >
                 Services
                 <span className="absolute left-1/2 bottom-0 w-0 h-[2px] bg-primary transition-all duration-300 group-hover:left-0 group-hover:w-full"></span>
-              </a>
-              <a
-                href="/Saajbari/#about"
-                className="nav-link px-3 rounded-md text-sm font-medium relative overflow-hidden group"
+              </button>
+              <button
+                type="button"
+                className="nav-link px-3 rounded-md text-sm font-medium relative overflow-hidden group bg-transparent border-none outline-none cursor-pointer"
+                onClick={() => {
+                  const section = document.getElementById('about');
+                  if (section) {
+                    section.scrollIntoView({ behavior: 'smooth' });
+                  }
+                }}
               >
                 About
                 <span className="absolute left-1/2 bottom-0 w-0 h-[2px] bg-primary transition-all duration-300 group-hover:left-0 group-hover:w-full"></span>
-              </a>
-              <a
-                href="/Saajbari/#contact"
-                className="group relative inline-block px-6 py-2 rounded-full text-sm font-medium bg-primary text-white transition-all duration-300 overflow-hidden"
+              </button>
+              <button
+                type="button"
+                className="group relative inline-block px-6 py-2 rounded-full text-sm font-medium text-white bg-primary transition-all duration-300 overflow-hidden border-none outline-none cursor-pointer"
+                onClick={() => {
+                  const section = document.getElementById('contact');
+                  if (section) {
+                    section.scrollIntoView({ behavior: 'smooth' });
+                  }
+                }}
               >
                 <span className="absolute left-0 bottom-0 w-full h-0 bg-white transition-all duration-300 group-hover:h-full group-hover:border-primary group-hover:border-2 rounded-full"></span>
                 <span className="relative z-10 transition-colors duration-300 group-hover:text-primary">
                   Contact
                 </span>
-              </a>
+              </button>
             </div>
           </div>
 
@@ -81,34 +103,57 @@ function Navbar() {
         }`}
       >
         <div className="px-2 pt-2 pb-3 space-y-1 sm:px-3">
-          <a
-            href="/Saajbari/"
-            onClick={handleMobileLinkClick}
-            className="nav-link block px-3 py-2 rounded-md text-base font-medium hover:text-primary"
+          <button
+            type="button"
+            onClick={() => {
+              if (typeof window !== 'undefined') {
+                window.scrollTo({ top: 0, behavior: 'smooth' });
+              }
+              handleMobileLinkClick();
+            }}
+            className="nav-link block w-full text-left px-3 py-2 rounded-md text-base font-medium hover:text-primary bg-transparent border-none outline-none"
           >
             Home
-          </a>
-          <a
-            href="/Saajbari/#services"
-            onClick={handleMobileLinkClick}
-            className="nav-link block px-3 py-2 rounded-md text-base font-medium hover:text-primary"
+          </button>
+          <button
+            type="button"
+            onClick={() => {
+              const section = document.getElementById('services');
+              if (section) {
+                section.scrollIntoView({ behavior: 'smooth' });
+              }
+              handleMobileLinkClick();
+            }}
+            className="nav-link block w-full text-left px-3 py-2 rounded-md text-base font-medium hover:text-primary bg-transparent border-none outline-none"
           >
             Services
-          </a>
-          <a
-            href="/Saajbari/#about"
-            onClick={handleMobileLinkClick}
-            className="nav-link block px-3 py-2 rounded-md text-base font-medium hover:text-primary"
+          </button>
+          <button
+            type="button"
+            onClick={() => {
+              const section = document.getElementById('about');
+              if (section) {
+                section.scrollIntoView({ behavior: 'smooth' });
+              }
+              handleMobileLinkClick();
+            }}
+            className="nav-link block w-full text-left px-3 py-2 rounded-md text-base font-medium hover:text-primary bg-transparent border-none outline-none"
           >
             About
-          </a>
-          <a
-            href="/Saajbari/#contact"
-            onClick={handleMobileLinkClick}
-            className="nav-link block px-3 py-2 rounded-md text-base font-medium hover:text-primary"
+          </button>
+          <button
+            type="button"
+            onClick={() => {
+              const section = document.getElementById('contact');
+              if (section) {
+                section.scrollIntoView({ behavior: 'smooth' });
+              }
+              handleMobileLinkClick();
+            }}
+            className="nav-link block w-full text-left px-3 py-2 rounded-md text-base font-medium hover:text-primary bg-transparent border-none outline-none"
           >
             Contact
-          </a>
+          </button>
         </div>
       </div>
     </nav>

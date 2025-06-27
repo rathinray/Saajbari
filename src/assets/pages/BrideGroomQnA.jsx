@@ -4,18 +4,18 @@ import { Link } from 'react-router-dom';
 const BrideGroomQnA = () => {
   const quiz = [
     {
-      question: 'Where did Som & Ritika first meet?',
+      question: 'Where did Rajesh & Moumita  first meet?',
       options: ['At college fest', 'At a wedding', 'On a trip', 'At work'],
       answer: 'At college fest',
     },
     {
-      question: 'What is Ritika’s favorite color?',
+      question: 'What is Moumita’s favorite color?',
       options: ['Blue', 'Lavender', 'Green', 'Red'],
       answer: 'Lavender',
     },
     {
       question: 'Who said "I love you" first?',
-      options: ['Som', 'Ritika', 'Both at same time', 'Friend guessed'],
+      options: ['Rajesh', 'Moumita', 'Both at same time', 'Friend guessed'],
       answer: 'Som',
     },
     {
@@ -57,7 +57,7 @@ const BrideGroomQnA = () => {
   return (
     <div className="min-h-screen bg-pink-50 flex flex-col items-center justify-center p-4">
       <div className="bg-white p-6 rounded-xl shadow-md max-w-xl w-full text-center">
-        <h2 className="text-2xl font-bold text-pink-700 mb-4">💍 Wedding Quiz: How Well Do You Know Som & Ritika?</h2>
+        <h2 className="text-2xl font-bold text-pink-700 mb-4">💍 Wedding Quiz: How Well Do You Know Rajesh & Moumita ?</h2>
 
         {/* Progress Bar */}
         <div className="w-full bg-gray-300 rounded-full h-4 mb-6">
@@ -117,7 +117,7 @@ const BrideGroomQnA = () => {
           </div>
         )}
       </div>
-      <Link to="/wedding-menu"
+      <Link to="/wedding-menu-bangla"
         // 👈 Route to your main page
         className="fixed bottom-6 right-6 bg-yellow-500 text-white p-4 rounded-full shadow-lg hover:bg-yellow-600 transition-all"
       >
