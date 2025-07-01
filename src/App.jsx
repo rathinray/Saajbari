@@ -1,4 +1,4 @@
-import { BrowserRouter as Router, Routes, Route, Navigate, HashRouter } from 'react-router-dom';
+import { BrowserRouter as Router, Routes, Route, Navigate, HashRouter, BrowserRouter } from 'react-router-dom';
 import Catering from './assets/pages/Catering';
 import HomePage from './assets/pages/HomePage';
 import MenuPage from './assets/pages/MenuPage';
@@ -42,7 +42,7 @@ function App() {
 
   return (
     
-    <Router>
+    <BrowserRouter>
       <ScrollToTop />
       <Routes>
 
@@ -60,7 +60,7 @@ function App() {
         <Route path='/wedding-images' element={<WeddingImages/>}/>
         <Route path="/wedding-menu-bangla1" element={<WeddingMenuBangla1/>} />
       </Routes>
-    </Router>
+    </BrowserRouter>
   );
 }
 

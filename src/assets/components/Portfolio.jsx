@@ -17,12 +17,6 @@ import Img13 from '../images/decoration/birthday-2.jpeg'
 import Img14 from '../images/decoration/img14.jpeg'
 import Img15 from '../images/decoration/img15.jpeg'
 
-
-
-
-
-
-
 gsap.registerPlugin(ScrollTrigger);
 
 // Portfolio Data
@@ -37,7 +31,6 @@ const portfolioItems = [
       Img8,
       Img12,
       Img13,
-     
     ],
   },
   {
@@ -46,12 +39,12 @@ const portfolioItems = [
     title: "Memorable Wedding Decorations",
     subtitle: "Creative Concepts & Styling",
     images: [
-     Img1,
-     Img3,
-     Img4,
-     Img5,
-     Img6,
-     Img7,
+      Img1,
+      Img3,
+      Img4,
+      Img5,
+      Img6,
+      Img7,
     ],
   },
   {
@@ -65,7 +58,6 @@ const portfolioItems = [
       Img11,
       Img14,
       Img15,
-      
     ],
   },
 ];
@@ -75,8 +67,14 @@ const CarouselModal = ({ images, currentIdx, onClose, onPrev, onNext, isOpen }) 
   if (!isOpen) return null;
 
   useEffect(() => {
-    document.body.style.overflow = "hidden";
-    return () => { document.body.style.overflow = ""; };
+    // Only lock scroll for desktop, allow scroll for mobile
+    const isMobile = window.innerWidth <= 768;
+    if (!isMobile) {
+      document.body.style.overflow = "hidden";
+    }
+    return () => {
+      document.body.style.overflow = "";
+    };
   }, []);
 
   return (
