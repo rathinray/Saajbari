@@ -32,11 +32,22 @@ const WeddingMenuBangla = () => {
   // Mock data for the wedding reception menu in Bengali
   const menuData = [
     {
+      id: 'snacks',
+      title: '🥤 আপনাদের জন্য বিশেষ স্ন্যাকস ও পানীয়',
+      items: [
+        { name: 'ঠান্ডা পানীয়', description: '' },
+        { name: 'পাকোড়া', description: '' },
+        { name: 'ফুচকা', description: '' },
+        { name: 'কফি', description: '' },
+      ],
+    },
+    {
       id: 'appetizers',
       title: '🥗 স্টার্টার',
       items: [
         { name: 'লেবু', description: '' },
         { name: 'স্যালাড', description: '' },
+        { name: 'রাধা বল্লবি ', description: '' },
         { name: 'চানা বাটার', description: '' },
         { name: 'পাট ভাজা', description: '' },
       ],
@@ -192,9 +203,15 @@ const WeddingMenuBangla = () => {
           <p className='text-xl text-gray-700 font-lora italic'>সাজবাড়ি ইভেন্ট</p>
           <Link to={'/'} className='text-xl text-gray-700 font-lora italic'>🌐 ওয়েবসাইট ভিজিট করুন</Link>
           </div>
-          <div className='border-b'>
-          <p className='text-xl text-gray-700 font-lora italic'>🍴 ক্যাটারিং পরিচালনায়</p>
-          <p className='text-xl text-gray-700 font-lora italic'>রয়্যাল ফ্লেভার্স ক্যাটারিং</p>
+          <div className='flex justify-between border-b'>
+            <div>
+            <p className='text-xl text-gray-700 font-lora italic'>🍴 ক্যাটারিং পরিচালনায়</p>
+            <p className='text-xl text-gray-700 font-lora italic'>রয়্যাল ফ্লেভার্স ক্যাটারিং</p>
+            </div>
+            <div>
+            <p className='text-xl text-gray-700 font-lora italic'>🌸 ফুলের সাজসজ্জা</p>
+            <p className='text-xl text-gray-700 font-lora italic'>মা মনসা ফ্লাওয়ার ডেকোরেশন</p>
+            </div>
           </div>
           <div className="flex justify-between">
         <Link to="/wedding-spin-wheel" className="inline-block bg-pink-700 text-white w-36 py-2 mt-4 rounded-full shadow-lg animate-bounce">

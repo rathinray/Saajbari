@@ -33,7 +33,7 @@ const About = () => {
   }, []);
 
     return (
-  <section id="about" className="py-20 bg-secondary">
+  <section id="about" className="py-10 bg-secondary">
     <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
       <div className="flex flex-col lg:flex-row items-center gap-12">
         <div className="lg:w-1/2">
@@ -68,7 +68,7 @@ const About = () => {
 
           <div className="grid grid-cols-2 gap-6 mb-8">
             <div className="flex items-center">
-              <div className="w-12 h-12 bg-primary bg-opacity-10 rounded-full flex items-center justify-center mr-4 text-primary">
+              <div className="w-12 h-12 bg-primary/10 rounded-full flex items-center justify-center mr-4 text-primary">
                 <i className="fas fa-calendar-check text-xl"></i>
               </div>
               <div>
@@ -77,7 +77,7 @@ const About = () => {
               </div>
             </div>
             <div className="flex items-center">
-              <div className="w-12 h-12 bg-primary bg-opacity-10 rounded-full flex items-center justify-center mr-4 text-primary">
+              <div className="w-12 h-12 bg-primary/10 rounded-full flex items-center justify-center mr-4 text-primary">
                 <i className="fas fa-smile-beam text-xl"></i>
               </div>
               <div>
@@ -87,12 +87,12 @@ const About = () => {
             </div>
           </div>
 
-          <a
+          {/* <a
             href="#contact"
             className="bg-primary hover:bg-opacity-90 text-white px-8 py-3 rounded-full inline-block font-medium transition-all"
           >
             Get to Know Us
-          </a>
+          </a> */}
         </div>
       </div>
     </div>

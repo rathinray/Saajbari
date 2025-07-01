@@ -146,3 +146,174 @@ html{
 .text-bengoli{
   font-family: 'SolaimanLipi', sans-serif;
 }
+
+
+/* /////////////////////// */
+
+.bengali-wedding-menu {
+  font-family: 'Hind Siliguri', 'Noto Sans Bengali', sans-serif;
+  max-width: 100%;
+  margin: 1rem auto;
+  padding: 1rem;
+  background-color: #fff9f9;
+  color: #333;
+  position: relative;
+  overflow: hidden;
+  box-shadow: 0 5px 15px rgba(0, 0, 0, 0.05);
+  border-radius: 0;
+}
+
+.menu-pattern {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  opacity: 0.1;
+  z-index: 0;
+}
+
+.menu-header {
+  position: relative;
+  text-align: center;
+  padding: 1rem 0;
+  margin-bottom: 1rem;
+}
+
+.menu-title {
+  font-size: 2rem;
+  color: #e84393;
+  margin: 0.5rem 0;
+  position: relative;
+  z-index: 1;
+}
+
+.bengali-text {
+  display: block;
+  font-size: 1.8rem;
+  font-weight: 700;
+}
+
+.english-text {
+  display: block;
+  font-size: 1.1rem;
+  font-weight: 400;
+  color: #6c5ce7;
+  margin-top: 0.3rem;
+}
+
+.border-top, .border-bottom {
+  height: 3px;
+  background: linear-gradient(90deg, #e84393, #6c5ce7, #e84393);
+  transform-origin: left center;
+  margin: 0.5rem auto;
+  width: 90%;
+}
+
+.menu-content {
+  position: relative;
+  z-index: 1;
+  padding: 0 0.5rem;
+}
+
+.menu-section {
+  margin-bottom: 1.5rem;
+}
+
+.section-title {
+  font-size: 1.4rem;
+  color: #6c5ce7;
+  text-align: center;
+  margin-bottom: 0.8rem;
+  padding-bottom: 0.3rem;
+  border-bottom: 1px dashed #e84393;
+}
+
+.dish-list {
+  list-style: none;
+  padding: 0;
+  display: block;
+}
+
+.dish-item {
+  background-color: rgba(255, 255, 255, 0.9);
+  padding: 0.7rem 1rem;
+  border-radius: 3px;
+  box-shadow: 0 1px 3px rgba(0, 0, 0, 0.05);
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  transition: all 0.2s ease;
+  margin-bottom: 0.5rem;
+  -webkit-tap-highlight-color: transparent;
+}
+
+.dish-item:active {
+  transform: scale(0.98);
+  background-color: rgba(255, 255, 255, 1);
+}
+
+.dish-name {
+  font-size: 1rem;
+  flex-grow: 1;
+}
+
+.dish-decoration {
+  margin-left: 0.5rem;
+}
+
+.flower-svg {
+  display: none; /* Hide flowers on mobile for better performance */
+}
+
+/* Landscape orientation adjustments */
+@media (orientation: landscape) {
+  .dish-list {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
+    gap: 0.5rem;
+  }
+  
+  .flower-svg {
+    display: block;
+    width: 25px;
+    height: 25px;
+  }
+}
+
+/* Tablet and larger screens */
+@media (min-width: 768px) {
+  .bengali-wedding-menu {
+    max-width: 800px;
+    margin: 2rem auto;
+    padding: 2rem;
+    border-radius: 8px;
+  }
+  
+  .menu-header {
+    padding: 2rem 0;
+  }
+  
+  .menu-title {
+    font-size: 3rem;
+  }
+  
+  .bengali-text {
+    font-size: 2.5rem;
+  }
+  
+  .english-text {
+    font-size: 1.5rem;
+  }
+  
+  .dish-list {
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+    gap: 0.8rem;
+  }
+  
+  .flower-svg {
+    display: block;
+    width: 30px;
+    height: 30px;
+  }
+}

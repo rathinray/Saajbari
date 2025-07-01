@@ -1,17 +1,11 @@
 import React, { useState, useRef, useEffect } from "react";
 import weddingimage1 from "../images/wedding/weddingimage1.jpg";
-
+import weddingimage2 from "../images/wedding/weddingimage2.jpg";
+import weddingimage3 from "../images/wedding/weddingimage3.jpg";
 import weddingimage4 from "../images/wedding/weddingimage4.jpg";
-import weddingimage5 from "../images/wedding/weddingimage5.jpg";
+import weddingimage5 from "../images/wedding/weddingimage5.jpeg";
 import weddingimage6 from "../images/wedding/weddingimage6.jpg";
-import weddingimage7 from "../images/wedding/weddingimage7.jpeg";
-import weddingimage8 from "../images/wedding/weddingimage8.jpeg";
-import weddingimage9 from "../images/wedding/weddingimage9.jpeg";
-import weddingimage10 from "../images/wedding/weddingimage10.jpeg";
-import weddingimage11 from "../images/wedding/weddingimage11.jpeg";
-import weddingimage12 from "../images/wedding/weddingimage12.jpeg";
-import weddingimage13 from "../images/wedding/weddingimage13.jpeg";
-import Card from "../images/wedding/Card.jpeg"
+import Cover from "../images/wedding/cover.jpg";
 import Footer from "../components/Footer";
 
 
@@ -21,18 +15,11 @@ import Footer from "../components/Footer";
 // import gsap from "gsap";
 
 const galleryImages = [
-  { id: 1, src: weddingimage1, alt: "Bride and groom first look", category: "ceremony" },
-  { id: 2, src: weddingimage13, alt: "Wedding ceremony", category: "ceremony" },
-  { id: 3, src: weddingimage9, alt: "Bridal party", category: "party" },
-  { id: 4, src: weddingimage4, alt: "Reception decorations", category: "reception" },
-  { id: 5, src: weddingimage5, alt: "First dance", category: "reception" },
-  { id: 6, src: weddingimage6, alt: "Cake cutting", category: "reception" },
-  { id: 7, src: weddingimage7, alt: "Bouquet toss", category: "reception" },
-  { id: 8, src: weddingimage8, alt: "Sunset portraits", category: "portraits" },
-  { id: 9, src: weddingimage9, alt: "Getting ready", category: "preparation" },
-  { id: 10, src: weddingimage10, alt: "Ring exchange", category: "ceremony" },
-  { id: 11, src: weddingimage11, alt: "Reception entrance", category: "reception" },
-  { id: 12, src: weddingimage12, alt: "Family photos", category: "portraits" }
+  { id: 1, src: weddingimage1, alt: "Forever starts with you.", category: "Pre-wedding" },
+  { id: 2, src: weddingimage2, alt: "Captured in a moment, destined for a lifetime.", category: "Pre-wedding" },
+  { id: 3, src: weddingimage3, alt: "Stealing hearts before stealing last names.", category: "Pre-wedding" },
+  { id: 4, src: weddingimage4, alt: "Warning: We bring too much cuteness together.", category: "Pre-wedding" },
+  { id: 5, src: weddingimage5, alt: "You + Me = Forever", category: "Pre-wedding" },
 ];
 
 const WeddingImages = () => {
@@ -114,7 +101,7 @@ const WeddingImages = () => {
   return (
     <div className="bg-gray-50 font-montserrat">
       {/* Hero Section */}
-      <section style={{ backgroundImage: `url(${weddingimage12})` }}
+      <section style={{ backgroundImage: `url(${Cover})` }}
  className="hero min-h-screen flex items-center justify-center text-center text-white px-4">
         <div className="max-w-4xl mx-auto">
           <h1 className="font-playfair text-4xl md:text-6xl lg:text-7xl font-bold mb-6 text-shadow">
@@ -313,7 +300,7 @@ const WeddingImages = () => {
 
       {/* Right Image */}
       <div className="flex justify-center">
-        <img src={weddingimage1} alt="Our Story" className="rounded-2xl shadow-lg max-w-full h-auto" />
+        <img src={weddingimage6} alt="Our Story" className="rounded-2xl shadow-lg max-w-full h-auto" />
       </div>
     </div>
   </div>
