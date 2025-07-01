@@ -42,7 +42,7 @@ function App() {
 
   return (
     
-    <BrowserRouter>
+    <HashRouter>
       <ScrollToTop />
       <Routes>
 
@@ -60,7 +60,7 @@ function App() {
         <Route path='/wedding-images' element={<WeddingImages/>}/>
         <Route path="/wedding-menu-bangla1" element={<WeddingMenuBangla1/>} />
       </Routes>
-    </BrowserRouter>
+    </HashRouter>
   );
 }
 
