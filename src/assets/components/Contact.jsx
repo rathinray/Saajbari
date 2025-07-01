@@ -119,7 +119,7 @@ const Contact = () => {
               </div>
             </div>
 
-            <div className="mt-8">
+            {/* <div className="mt-8">
               <h4 className="font-medium mb-4">Follow Us</h4>
               <div className="flex space-x-4">
                 <a
@@ -144,7 +144,7 @@ const Contact = () => {
                   <i className="fab fa-youtube text-red-500"></i>
                 </a>
               </div>
-            </div>
+            </div> */}
           </div>
         </div>
       </div>

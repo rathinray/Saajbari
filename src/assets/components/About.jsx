@@ -66,7 +66,7 @@ const About = () => {
             that exceed expectations and create lasting memories.
           </p>
 
-          <div className="grid grid-cols-2 gap-6 mb-8">
+          {/* <div className="grid grid-cols-2 gap-6 mb-8">
             <div className="flex items-center">
               <div className="w-12 h-12 bg-primary/10 rounded-full flex items-center justify-center mr-4 text-primary">
                 <i className="fas fa-calendar-check text-xl"></i>
@@ -85,7 +85,7 @@ const About = () => {
                 <p className="text-gray-600">Client Satisfaction</p>
               </div>
             </div>
-          </div>
+          </div> */}
 
           {/* <a
             href="#contact"

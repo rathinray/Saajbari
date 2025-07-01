@@ -8,6 +8,7 @@ import Footer from "../components/Footer";
 import { useRef, useEffect } from "react";
 import gsap from "gsap";
 import { ScrollTrigger } from "gsap/ScrollTrigger";
+import CookiePopup from "../components/CookiePopup";
 gsap.registerPlugin(ScrollTrigger);
 
 const HomePage = () => {
@@ -22,6 +23,7 @@ const HomePage = () => {
       <Portfolio />
       <Contact />
       <Footer />
+      <CookiePopup />
     </div>
   );
 }

@@ -1,4 +1,6 @@
 import { useState, useRef } from 'react'
+import { Link } from 'react-router-dom'
+import logo from '/public/logo.png'
 
 function Navbar() {
   const [isMobileMenuOpen, setIsMobileMenuOpen] = useState(false)
@@ -19,13 +21,9 @@ function Navbar() {
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <div className="flex justify-between h-20 items-center">
           <div className="flex-shrink-0 flex items-center">
-            <a
-              href="/Saajbari/"
-              className="text-2xl font-serif font-bold text-primary"
-              id="logo-link"
-            >
-              SAAJBARI
-            </a>
+           <Link to="/">
+            <img src={logo} alt="SAAJBARI" className="md:w-52 w-32 object-contain" />
+           </Link>
           </div>
 
         
@@ -33,7 +31,7 @@ function Navbar() {
           <div className="hidden md:block">
             <div className="ml-10 flex items-center space-x-8">
               <a
-                href="/Saajbari/"
+                href="/"
                 className="nav-link px-3 rounded-md text-sm font-medium relative overflow-hidden group"
               >
                 Home

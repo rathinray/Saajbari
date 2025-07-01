@@ -8,36 +8,36 @@ gsap.registerPlugin(ScrollTrigger);
 const services = [
   {
     icon: "fas fa-ring",
-    title: "Wedding Decorations",
+    title: "Elegant Decoration",
     description:
-      "Exquisite wedding decor that tells your unique love story with elegance and sophistication.",
+      "We offer elegant flower decorations, stylish pendle setups, and stunning light arrangements to beautifully transform your event space and create a memorable atmosphere.",
     delay: "",
     as: "div",
     href: "/wedding-decoration",
   },
-  {
-    icon: "fas fa-birthday-cake",
-    title: "Birthday Celebrations",
-    description:
-      "Custom birthday parties that reflect personality and create lasting memories for all ages.",
-    delay: "animate-delay-100",
-    as: "div",
-    href: "/birthday-celebration",
-  },
-  {
-    icon: "fas fa-glass-cheers",
-    title: "Corporate Events",
-    description:
-      "Professional event planning for corporate gatherings that impress clients and employees alike.",
-    delay: "animate-delay-200",
-    as: "div",
-    href: "/corporate-events",
-  },
+  // {
+  //   icon: "fas fa-birthday-cake",
+  //   title: "Birthday Celebrations",
+  //   description:
+  //     "Custom birthday parties that reflect personality and create lasting memories for all ages.",
+  //   delay: "animate-delay-100",
+  //   as: "div",
+  //   href: "/birthday-celebration",
+  // },
+  // {
+  //   icon: "fas fa-glass-cheers",
+  //   title: "Corporate Events",
+  //   description:
+  //     "Professional event planning for corporate gatherings that impress clients and employees alike.",
+  //   delay: "animate-delay-200",
+  //   as: "div",
+  //   href: "/corporate-events",
+  // },
   {
     icon: "fas fa-utensils",
-    title: "Catering Services",
+    title: "Catering & Essential Services",
     description:
-      "Gourmet catering options tailored to your event's theme and your guests' preferences.",
+      "We offer expert cooking services, complete catering solutions, and reliable water supply to ensure your event runs smoothly with delicious food and seamless hospitality.",
     delay: "",
     as: "a",
     href: "/catering-services",
@@ -45,18 +45,18 @@ const services = [
   },
   {
     icon: "fas fa-photo-video",
-    title: "Photography & Video",
+    title: "Photo, Video & Sound",
     description:
-      "Professional documentation of your special moments with artistic photography and videography.",
+      "Capture every special moment and enjoy crystal-clear sound with our professional photography, videography, and sound system solutions.",
     delay: "animate-delay-100",
     as: "div",
     href: "/photography-video",
   },
   {
-    icon: "fas fa-lightbulb",
-    title: "Custom Themes",
+    icon: "fas fa-store",
+    title: "Live Stall Corner",
     description:
-      "Unique, personalized event themes designed exclusively for your celebration.",
+      "We provide a variety of popular stall items including fresh coffee, crispy fuchka, delicious pan, soft lusi, and tasty pakoda to delight your guests with authentic flavors.",
     delay: "animate-delay-200",
     as: "div",
     href: "/custom-themes",
@@ -129,12 +129,11 @@ const Services = () => {
       </p>
     </div>
   
-          <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+          <div className="grid grid-cols-1 md:grid-cols-2 gap-8">
             {services.map((service, idx) => {
               if (service.href) {         
                 return (
-                  <Link
-                    to={service.href}
+                  <div
                     key={service.title}
                     ref={(el) => (cardsRef.current[idx] = el)}
                     className="service-card bg-white p-8 rounded-lg shadow-md transition-all duration-300 hover:border-primary border border-transparent"
@@ -146,7 +145,7 @@ const Services = () => {
                       {service.title}
                     </h3>
                     <p className="text-gray-600">{service.description}</p>
-                  </Link>
+                  </div>
                 );
               } else {
                 return (

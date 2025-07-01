@@ -396,7 +396,7 @@ const WeddingImages = () => {
       Photography by <span className="text-pink-500 font-semibold">Saajbari Photography</span>
     </p>
     <p className="text-lg font-medium">
-      Visit us: <a href="https://saajbarievent.in" target="_blank" rel="noopener noreferrer" className="text-pink-500 hover:underline">www.saajbarievents.in</a>
+      Visit us: <a href="https://saajbarievent.in" target="_blank" rel="noopener noreferrer" className="text-pink-500 hover:underline">www.saajbarievent.in</a>
     </p>
     <p className="text-base text-gray-400 mt-4">
       © 2025 <span className="text-white font-semibold">Saajbari</span>. All Rights Reserved.

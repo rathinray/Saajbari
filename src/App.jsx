@@ -42,10 +42,10 @@ function App() {
 
   return (
     
-    <HashRouter>
+    <Router>
       <ScrollToTop />
       <Routes>
-     
+
         <Route path="/" element={<HomePage />} />
         <Route path="/catering-services" element={<Catering />} />
         <Route path="/wedding-menu" element={<MenuPage />} />
@@ -60,7 +60,7 @@ function App() {
         <Route path='/wedding-images' element={<WeddingImages/>}/>
         <Route path="/wedding-menu-bangla1" element={<WeddingMenuBangla1/>} />
       </Routes>
-    </HashRouter>
+    </Router>
   );
 }
 

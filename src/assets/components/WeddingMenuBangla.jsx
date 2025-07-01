@@ -148,6 +148,10 @@ const WeddingMenuBangla = () => {
         {/* Wedding Menu Header */}
         <div className="w-full max-w-2xl bg-white bg-opacity-95 p-4 rounded-3xl shadow-2xl mb-8 text-center border-b-4 border-rose-200">
           <h1 className="text-3xl md:text-6xl font-bold text-gray-800 mb-4 font-great-vibes leading-tight text-rose-600 text-bengoli"> রাজেশ ও মৌমিতা’র শুভ বিবাহ</h1>
+          <Link to="/wedding-images" className="bg-pink-600 hover:bg-pink-700 text-white font-semibold py-2 px-6 rounded-full shadow-lg transition duration-300">
+          👀 Take a Look
+</Link>
+
          
         </div>
         <div className="w-full max-w-2xl bg-white bg-opacity-95 p-4 rounded-3xl shadow-2xl mb-8 text-center border-b-4 border-rose-200 text-bengoli">

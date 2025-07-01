@@ -5,13 +5,13 @@ const Footer = () => (
     <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
       <div className="grid grid-cols-1 md:grid-cols-3 gap-8 md:gap-20">
         <div>
-          <h3 className="text-xl font-serif font-bold mb-4">SAAJBARI</h3>
+          <img src="/public/logo.png" alt="SAAJBARI" className="w-32 md:w-42 mb-4 object-contain" />
           <p className="text-gray-400 mb-4">
             Creating unforgettable moments with exquisite event planning and
             decoration services.
           </p>
           <div className="flex space-x-4">
-            <a
+            {/* <a
               href="#"
               className="text-gray-400 hover:text-primary transition-colors"
               aria-label="Facebook"
@@ -24,7 +24,7 @@ const Footer = () => (
               aria-label="Instagram"
             >
               <i className="fab fa-instagram"></i>
-            </a>
+            </a> */}
             {/* <a
               href="#"
               className="text-gray-400 hover:text-primary transition-colors"
@@ -32,13 +32,13 @@ const Footer = () => (
             >
               <i className="fab fa-pinterest-p"></i>
             </a> */}
-            <a
+            {/* <a
               href="#"
               className="text-gray-400 hover:text-primary transition-colors"
               aria-label="YouTube"
             >
               <i className="fab fa-youtube"></i>
-            </a>
+            </a> */}
           </div>
         </div>
 
@@ -107,48 +107,53 @@ const Footer = () => (
           </ul>
         </div>
 
-        <div>
+        <div className="flex gap-4">
+          <div>
           <h4 className="font-serif font-bold mb-4">Services</h4>
           <ul className="space-y-2">
-            <li>
-              <a
-                href="#"
-                className="text-gray-400 hover:text-primary transition-colors"
-              >
-                Wedding Planning
-              </a>
+            <li
+              className="text-gray-400 hover:text-primary transition-colors"
+            >
+              Wedding Planning
             </li>
-            <li>
-              <a
-                href="#"
-                className="text-gray-400 hover:text-primary transition-colors"
-              >
-                Birthday Parties
-              </a>
+            <li
+              className="text-gray-400 hover:text-primary transition-colors"
+            >
+              Birthday Parties
             </li>
-            <li>
-              <a
-                href="#"
-                className="text-gray-400 hover:text-primary transition-colors"
-              >
-                Corporate Events
-              </a>
+            <li
+              className="text-gray-400 hover:text-primary transition-colors"
+            >
+              Corporate Events
             </li>
-            <li>
-              <a
-                href="#"
-                className="text-gray-400 hover:text-primary transition-colors"
-              >
-                Catering Services
-              </a>
+            <li
+              className="text-gray-400 hover:text-primary transition-colors"
+            >
+              Catering Services
             </li>
-            <li>
-              <a
-                href="#"
-                className="text-gray-400 hover:text-primary transition-colors"
-              >
-                Photography
-              </a>
+            <li
+              className="text-gray-400 hover:text-primary transition-colors"
+            >
+              Photography
+            </li>
+          </ul>
+          </div>
+          
+          <ul className="space-y-2 mt-10">
+            <li
+              className="text-gray-400 hover:text-primary transition-colors"
+            >
+              Flower Decoration
+            </li>
+            <li
+              className="text-gray-400 hover:text-primary transition-colors"
+            >
+              Pendle Decoration
+            </li>
+            <li
+              className="text-gray-400 hover:text-primary transition-colors"
+            >
+              Light Decoration
             </li>
           </ul>
         </div>
@@ -182,7 +187,7 @@ const Footer = () => (
           © 2025 Saajbari. All rights reserved.
         </p>
         <div className="flex space-x-6 mt-4 md:mt-0">
-          <a
+          {/* <a
             href="#"
             className="text-gray-400 hover:text-primary text-sm transition-colors"
           >
@@ -193,7 +198,7 @@ const Footer = () => (
             className="text-gray-400 hover:text-primary text-sm transition-colors"
           >
             Terms of Service
-          </a>
+          </a> */}
           {/* <a
             href="#"
             className="text-gray-400 hover:text-primary text-sm transition-colors"
