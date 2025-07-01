@@ -1,11 +1,13 @@
 import React from "react";
+import Logo from "/public/logo.png";
+
 
 const Footer = () => (
   <footer className="bg-dark text-white py-8">
     <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
       <div className="grid grid-cols-1 md:grid-cols-3 gap-8 md:gap-20">
         <div>
-          <img src="/public/logo.png" alt="SAAJBARI" className="w-32 md:w-42 mb-4 object-contain" />
+          <img src={Logo} alt="SAAJBARI" className="w-32 md:w-42 mb-4 object-contain" />
           <p className="text-gray-400 mb-4">
             Creating unforgettable moments with exquisite event planning and
             decoration services.
