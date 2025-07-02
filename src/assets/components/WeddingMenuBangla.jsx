@@ -210,7 +210,7 @@ const WeddingMenuBangla = () => {
           <div className='flex justify-between border-b'>
             <div>
             <p className='text-xl text-gray-700 font-lora italic'>🍴 ক্যাটারিং পরিচালনায়</p>
-            <p className='text-xl text-gray-700 font-lora italic'>রয়্যাল ফ্লেভার্স ক্যাটারিং</p>
+            <p className='text-xl text-gray-700 font-lora italic'>স্টার ক্যাটারার</p>
             </div>
             <div>
             <p className='text-xl text-gray-700 font-lora italic'>🌸 ফুলের সাজসজ্জা</p>
