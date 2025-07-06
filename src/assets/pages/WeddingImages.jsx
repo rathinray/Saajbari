@@ -392,14 +392,14 @@ const WeddingImages = () => {
     <p className="text-lg font-medium">
       Event Managed by <span className="text-pink-500 font-semibold">Saajbari Event</span>
     </p>
-    <p className="text-lg font-medium">
+    {/* <p className="text-lg font-medium">
       Photography by <span className="text-pink-500 font-semibold">Saajbari Photography</span>
-    </p>
+    </p> */}
     <p className="text-lg font-medium">
       Visit us: <a href="https://saajbarievent.in" target="_blank" rel="noopener noreferrer" className="text-pink-500 hover:underline">www.saajbarievent.in</a>
     </p>
     <p className="text-base text-gray-400 mt-4">
-      © 2025 <span className="text-white font-semibold">Saajbari</span>. All Rights Reserved.
+      © 2025 <span className="text-white font-semibold">Saajbarievent</span>. All Rights Reserved.
     </p>
   </div>
 </footer>

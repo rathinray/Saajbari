@@ -16,6 +16,7 @@ import WeddingMenuBangla from './assets/components/WeddingMenuBangla';
 import BengaliWeddingMenu from './assets/components/BengaliWeddingMenu';
 import WeddingImages from './assets/pages/WeddingImages';
 import WeddingMenuBangla1 from './assets/pages/WeddingMenuBangla1';
+import WeddingImagesGSAP from './assets/pages/WeddingImagesGsap';
 
 
 function App() {
@@ -55,10 +56,11 @@ function App() {
         <Route path="/wedding-decoration" element={<WeddingDecoration />} />
         <Route path="/birthday-celebration" element={<BirthdayCelebration />} />
         <Route path="/corporate-events" element={<CorporateEvents />} />
-        <Route path="/wedding-menu-bangla" element={<WeddingMenuBangla />} />
+        <Route path="/catering-menu" element={<WeddingMenuBangla />} />
         <Route path="/bengali-wedding-menu" element={<BengaliWeddingMenu />} />
         <Route path='/wedding-images' element={<WeddingImages/>}/>
         <Route path="/wedding-menu-bangla1" element={<WeddingMenuBangla1/>} />
+        <Route path="/wedding" element={<WeddingImagesGSAP/>} />
       </Routes>
     </HashRouter>
   );
