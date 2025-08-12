@@ -9,6 +9,7 @@ import { useRef, useEffect } from "react";
 import gsap from "gsap";
 import { ScrollTrigger } from "gsap/ScrollTrigger";
 import CookiePopup from "../components/CookiePopup";
+import WhatsappButton from "../components/WhatsappButton";
 gsap.registerPlugin(ScrollTrigger);
 
 const HomePage = () => {
@@ -18,6 +19,7 @@ const HomePage = () => {
     <div ref={scrollRef}>
       <Navbar />
       <Hero />
+      <WhatsappButton />
       <Services />
       <About />
       <Portfolio />
@@ -26,6 +28,6 @@ const HomePage = () => {
       <CookiePopup />
     </div>
   );
-}
+};
 
 export default HomePage;

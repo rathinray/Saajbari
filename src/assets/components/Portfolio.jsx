@@ -1,21 +1,21 @@
 import React, { useRef, useEffect, useState } from "react";
 import { gsap } from "gsap";
 import { ScrollTrigger } from "gsap/ScrollTrigger";
-import Img1 from '../images/decoration/img1.jpeg'
-import Img2 from '../images/decoration/img2.jpeg'
-import Img3 from '../images/decoration/img3.jpeg'
-import Img4 from '../images/decoration/img4.jpeg'
-import Img5 from '../images/decoration/img5.jpeg'  
-import Img6 from '../images/decoration/img6.jpeg'
-import Img7 from '../images/decoration/img7.jpeg'
-import Img8 from '../images/decoration/img8.jpeg'
-import Img9 from '../images/decoration/img9.jpeg'
-import Img10 from '../images/decoration/img10.jpeg'
-import Img11 from '../images/decoration/img11.jpeg'
-import Img12 from '../images/decoration/birthday-1.jpeg'
-import Img13 from '../images/decoration/birthday-2.jpeg'
-import Img14 from '../images/decoration/img14.jpeg'
-import Img15 from '../images/decoration/img15.jpeg'
+import Img1 from "../images/decoration/img1.jpeg";
+import Img2 from "../images/decoration/img2.jpeg";
+import Img3 from "../images/decoration/img3.jpeg";
+import Img4 from "../images/decoration/img4.jpeg";
+import Img5 from "../images/decoration/img5.jpeg";
+import Img6 from "../images/decoration/img6.jpeg";
+import Img7 from "../images/decoration/img7.jpeg";
+import Img8 from "../images/decoration/img8.jpeg";
+import Img9 from "../images/decoration/img9.jpeg";
+import Img10 from "../images/decoration/img10.jpeg";
+import Img11 from "../images/decoration/img11.jpeg";
+import Img12 from "../images/decoration/birthday-1.jpeg";
+import Img13 from "../images/decoration/birthday-2.jpeg";
+import Img14 from "../images/decoration/img14.jpeg";
+import Img15 from "../images/decoration/img15.jpeg";
 
 gsap.registerPlugin(ScrollTrigger);
 
@@ -26,44 +26,33 @@ const portfolioItems = [
     alt: "Birthday Celebrations",
     title: "Birthday Celebrations",
     subtitle: "Full Event Planning",
-    images: [
-      Img2,
-      Img8,
-      Img12,
-      Img13,
-    ],
+    images: [Img2, Img8, Img12, Img13],
   },
   {
     mainImg: Img4,
     alt: "Memorable Wedding Decorations",
     title: "Memorable Wedding Decorations",
     subtitle: "Creative Concepts & Styling",
-    images: [
-      Img1,
-      Img3,
-      Img4,
-      Img5,
-      Img6,
-      Img7,
-    ],
+    images: [Img1, Img3, Img4, Img5, Img6, Img7],
   },
   {
     mainImg: Img9,
     alt: "Corporate Event",
     title: "Making Your Big Day Beautiful",
     subtitle: "Every detail, beautifully arranged.",
-    images: [
-      Img9,
-      Img10,
-      Img11,
-      Img14,
-      Img15,
-    ],
+    images: [Img9, Img10, Img11, Img14, Img15],
   },
 ];
 
 // Carousel Modal Component
-const CarouselModal = ({ images, currentIdx, onClose, onPrev, onNext, isOpen }) => {
+const CarouselModal = ({
+  images,
+  currentIdx,
+  onClose,
+  onPrev,
+  onNext,
+  isOpen,
+}) => {
   if (!isOpen) return null;
 
   useEffect(() => {
@@ -79,7 +68,11 @@ const CarouselModal = ({ images, currentIdx, onClose, onPrev, onNext, isOpen }) 
 
   return (
     <div className="fixed inset-0 z-50 flex items-center justify-center bg-black bg-opacity-80 p-4">
-      <button className="absolute top-4 right-4 text-white text-3xl" onClick={onClose} aria-label="Close">
+      <button
+        className="absolute top-4 right-4 text-white text-3xl"
+        onClick={onClose}
+        aria-label="Close"
+      >
         &times;
       </button>
       <div className="relative w-full max-w-lg">
@@ -106,7 +99,9 @@ const CarouselModal = ({ images, currentIdx, onClose, onPrev, onNext, isOpen }) 
           {images.map((_, idx) => (
             <button
               key={idx}
-              className={`w-2 h-2 rounded-full ${idx === currentIdx ? "bg-primary" : "bg-white/50"}`}
+              className={`w-2 h-2 rounded-full ${
+                idx === currentIdx ? "bg-primary" : "bg-white/50"
+              }`}
               onClick={() => onNext(idx - currentIdx)}
               aria-label={`Go to slide ${idx + 1}`}
             ></button>
@@ -118,7 +113,15 @@ const CarouselModal = ({ images, currentIdx, onClose, onPrev, onNext, isOpen }) 
 };
 
 // Portfolio Card Component
-const PortfolioCard = ({ img, alt, title, subtitle, onClick, cardRef, textRef }) => (
+const PortfolioCard = ({
+  img,
+  alt,
+  title,
+  subtitle,
+  onClick,
+  cardRef,
+  textRef,
+}) => (
   <div
     ref={cardRef}
     className="group relative overflow-hidden rounded-lg shadow-lg cursor-pointer transition-transform duration-500"
@@ -126,7 +129,9 @@ const PortfolioCard = ({ img, alt, title, subtitle, onClick, cardRef, textRef })
     tabIndex={0}
     role="button"
     aria-label={`Open carousel for ${title}`}
-    onKeyDown={e => { if (e.key === "Enter" || e.key === " ") onClick(); }}
+    onKeyDown={(e) => {
+      if (e.key === "Enter" || e.key === " ") onClick();
+    }}
   >
     <img
       src={img}
@@ -161,22 +166,24 @@ const Portfolio = () => {
     const title = titleRef.current;
     const underline = underlineRef.current;
 
-    let targetWidth = '80%';
-    if (window.matchMedia('(min-width: 768px) and (max-width: 1580px)').matches) {
-      targetWidth = '30%';
+    let targetWidth = "80%";
+    if (
+      window.matchMedia("(min-width: 768px) and (max-width: 1580px)").matches
+    ) {
+      targetWidth = "30%";
     }
 
     gsap.fromTo(
       underline,
-      { width: '0%' },
+      { width: "0%" },
       {
         width: targetWidth,
         duration: 2,
-        ease: 'power2.out',
+        ease: "power2.out",
         scrollTrigger: {
           trigger: title,
-          start: 'top 60%',
-          toggleActions: 'play none none none',
+          start: "top 60%",
+          toggleActions: "play none none none",
         },
       }
     );
@@ -184,7 +191,8 @@ const Portfolio = () => {
 
   // Mobile Scroll Animation
   useEffect(() => {
-    if (window.innerWidth <= 768) { // Mobile only
+    if (window.innerWidth <= 768) {
+      // Mobile only
       cardRefs.current.forEach((card, index) => {
         gsap.fromTo(
           card,
@@ -226,19 +234,30 @@ const Portfolio = () => {
   };
 
   const closeCarousel = () => setCarouselOpen(false);
-  const prevImage = () => setCarouselIdx(idx => (idx - 1 + carouselImages.length) % carouselImages.length);
-  const nextImage = () => setCarouselIdx(idx => (idx + 1) % carouselImages.length);
+  const prevImage = () =>
+    setCarouselIdx(
+      (idx) => (idx - 1 + carouselImages.length) % carouselImages.length
+    );
+  const nextImage = () =>
+    setCarouselIdx((idx) => (idx + 1) % carouselImages.length);
 
   return (
     <section id="portfolio" className="py-10 bg-white">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <div className="text-center mb-16">
-          <h2 ref={titleRef} className="text-3xl md:text-4xl font-serif font-bold mb-4">
+          <h2
+            ref={titleRef}
+            className="text-3xl md:text-4xl font-serif font-bold mb-4"
+          >
             Our Recent Work
           </h2>
-          <div ref={underlineRef} className="w-20 h-1 bg-primary mx-auto mb-6" style={{ width: '0%' }}></div>
-          <p className="max-w-2xl mx-auto text-lg text-gray-600">
-            Browse through our portfolio of beautifully executed events.
+          <div
+            ref={underlineRef}
+            className="w-20 h-1 bg-primary mx-auto mb-3"
+            style={{ width: "0%" }}
+          ></div>
+          <p className="max-w-2xl mx-auto text-lg text-gray-600 text-bengoli">
+            আমাদের সুন্দরভাবে সাজানো ইভেন্টগুলোর পোর্টফোলিও দেখে নিন।
           </p>
         </div>
 
@@ -251,14 +270,17 @@ const Portfolio = () => {
               title={item.title}
               subtitle={item.subtitle}
               onClick={() => openCarousel(item.images)}
-              cardRef={el => cardRefs.current[idx] = el}
-              textRef={el => textRefs.current[idx] = el}
+              cardRef={(el) => (cardRefs.current[idx] = el)}
+              textRef={(el) => (textRefs.current[idx] = el)}
             />
           ))}
         </div>
 
         <div className="text-center mt-12">
-          <a href="#" className="inline-flex items-center text-primary font-medium hover:underline">
+          <a
+            href="#"
+            className="inline-flex items-center text-primary font-medium hover:underline"
+          >
             View More Projects <i className="fas fa-arrow-right ml-2"></i>
           </a>
         </div>

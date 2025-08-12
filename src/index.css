@@ -1,5 +1,5 @@
 @import "tailwindcss";
-html{
+html {
   scroll-behavior: smooth;
 }
 
@@ -7,10 +7,10 @@ html{
 
 @layer base {
   :root {
-    --color-primary: #D4AF37;
-    --color-secondary: #F8F3E6;
-    --color-accent: #E8C4C4;
-    --color-dark: #1A1A1A;
+    --color-primary: #d4af37;
+    --color-secondary: #f8f3e6;
+    --color-accent: #e8c4c4;
+    --color-dark: #1a1a1a;
   }
 }
 
@@ -25,7 +25,7 @@ html{
     @apply text-primary;
   }
 }
-  
+
 /* Petal falling animation */
 @keyframes fall {
   0% {
@@ -98,7 +98,7 @@ html{
 }
 .gallery-item:hover {
   transform: translateY(-5px);
-  box-shadow: 0 10px 25px rgba(0,0,0,0.15);
+  box-shadow: 0 10px 25px rgba(0, 0, 0, 0.15);
 }
 .gallery-item img {
   transition: transform 0.5s ease;
@@ -113,7 +113,7 @@ html{
   left: 0;
   width: 100%;
   height: 100%;
-  background-color: rgba(0,0,0,0.9);
+  background-color: rgba(0, 0, 0, 0.9);
   z-index: 1000;
   align-items: center;
   justify-content: center;
@@ -129,29 +129,31 @@ html{
   scroll-snap-align: start;
 }
 .hero {
-  background: linear-gradient(rgba(0,0,0,0.4), rgba(0,0,0,0.4)), ;
+  background: linear-gradient(rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4));
   background-size: cover;
   background-position: center;
   background-attachment: fixed;
 }
 .font-playfair {
-  font-family: 'Playfair Display', serif;
+  font-family: "Playfair Display", serif;
 }
 .font-montserrat {
-  font-family: 'Montserrat', sans-serif;
+  font-family: "Montserrat", sans-serif;
 }
 .text-shadow {
-  text-shadow: 1px 1px 3px rgba(0,0,0,0.5);
+  text-shadow: 1px 1px 3px rgba(0, 0, 0, 0.5);
 }
-.text-bengoli{
-  font-family: 'SolaimanLipi', sans-serif;
+.text-bengoli {
+  font-family: "SolaimanLipi", sans-serif;
 }
-
+.text-lora {
+  font-family: "Lora", "Noto Sans Bengali", sans-serif;
+}
 
 /* /////////////////////// */
 
 .bengali-wedding-menu {
-  font-family: 'Hind Siliguri', 'Noto Sans Bengali', sans-serif;
+  font-family: "Hind Siliguri", "Noto Sans Bengali", sans-serif;
   max-width: 100%;
   margin: 1rem auto;
   padding: 1rem;
@@ -202,7 +204,8 @@ html{
   margin-top: 0.3rem;
 }
 
-.border-top, .border-bottom {
+.border-top,
+.border-bottom {
   height: 3px;
   background: linear-gradient(90deg, #e84393, #6c5ce7, #e84393);
   transform-origin: left center;
@@ -273,7 +276,7 @@ html{
     grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
     gap: 0.5rem;
   }
-  
+
   .flower-svg {
     display: block;
     width: 25px;
@@ -289,28 +292,28 @@ html{
     padding: 2rem;
     border-radius: 8px;
   }
-  
+
   .menu-header {
     padding: 2rem 0;
   }
-  
+
   .menu-title {
     font-size: 3rem;
   }
-  
+
   .bengali-text {
     font-size: 2.5rem;
   }
-  
+
   .english-text {
     font-size: 1.5rem;
   }
-  
+
   .dish-list {
     grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
     gap: 0.8rem;
   }
-  
+
   .flower-svg {
     display: block;
     width: 30px;

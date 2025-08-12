@@ -1,13 +1,13 @@
-import React, { useState, useEffect } from 'react';
-import { Wheel } from 'react-custom-roulette-r19';
-import Confetti from 'react-confetti';
-import Modal from 'react-modal';
-import useSound from 'use-sound';
-import { Link } from 'react-router-dom';
+import React, { useState, useEffect } from "react";
+import { Wheel } from "react-custom-roulette-r19";
+import Confetti from "react-confetti";
+import Modal from "react-modal";
+import useSound from "use-sound";
+import { Link } from "react-router-dom";
 
 // Sound effect (you can replace with your own sound)
 // Check that the file exists in your project at: src/assets/sounds/spin-sound.mp3
-import spinSound from '../sounds/spin-sound.wav';
+import spinSound from "../sounds/spin-sound.wav";
 
 const WeddingSpinWheel = () => {
   const [mustSpin, setMustSpin] = useState(false);
@@ -20,13 +20,13 @@ const WeddingSpinWheel = () => {
 
   // Wedding Wheel Data
   const data = [
-    { option: '🎉 Unlimited Gulab Jamun🍩' },
-    { option: '🎁 Special Dessert Surprise' },
-    { option: '🎲 Try Again!' },
-    { option: '🍦 Extra Rosogolla' },
-    { option: '🍽️ Extra Paneer Tikka' },
-    { option: '🍦 Unlimited Ice Cream' },
-    { option: '🎲 Try Again!' },
+    { option: "🎉 Unlimited Gulab Jamun🍩" },
+    { option: "🎁 Special Dessert Surprise" },
+    { option: "🎲 Try Again!" },
+    { option: "🍦 Extra Rosogolla" },
+    { option: "🍽️ Extra Paneer Tikka" },
+    { option: "🍦 Unlimited Ice Cream" },
+    { option: "🎲 Try Again!" },
   ];
 
   // Handle Spin Click
@@ -89,10 +89,12 @@ const WeddingSpinWheel = () => {
               boxShadow: "0 10px 40px rgba(0,0,0,0.2)",
             }}
           >
-            <h2 className="text-2xl font-bold text-pink-700 mb-4">🎊 Congratulations!</h2>
+            <h2 className="text-2xl font-bold text-pink-700 mb-4">
+              🎊 Congratulations!
+            </h2>
             <p className="text-lg mb-4">{data[prizeNumber].option}</p>
             <p className="text-lg mb-4">Thank you for playing!</p>
-          
+
             <p className="text-xs mb-4">Dont take it too seriously</p>
             <p className="text-xs mb-4">We are just having fun</p>
 
@@ -107,7 +109,9 @@ const WeddingSpinWheel = () => {
       )}
 
       {/* Title */}
-      <h1 className="text-2xl font-bold mb-4 text-pink-700">🎯 Spin the Wedding Wheel!</h1>
+      <h1 className="text-2xl font-bold mb-4 text-pink-700">
+        🎯 Spin the Wedding Wheel!
+      </h1>
 
       {/* Wheel */}
       <div className="mb-6 z-10">
@@ -115,8 +119,8 @@ const WeddingSpinWheel = () => {
           mustStartSpinning={mustSpin}
           prizeNumber={prizeNumber}
           data={data}
-          backgroundColors={['#FFB6C1', '#FFDAB9']}
-          textColors={['#000']}
+          backgroundColors={["#FFB6C1", "#FFDAB9"]}
+          textColors={["#000"]}
           onStopSpinning={handleStopSpinning}
           radiusLineWidth={2}
           outerBorderColor="#F472B6"
@@ -134,7 +138,8 @@ const WeddingSpinWheel = () => {
         Spin Now 🎉
       </button>
 
-      <Link to="/wedding-menu-bangla"
+      <Link
+        to="/catering-menu"
         // 👈 Route to your main page
         className="fixed bottom-6 right-6 bg-yellow-500 text-white p-4 rounded-full shadow-lg hover:bg-yellow-600 transition-all z-20"
       >
