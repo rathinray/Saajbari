@@ -154,7 +154,7 @@ const WeddingMenuBangla = () => {
             নিথিকার শুভ অন্নপ্রাশন
           </h1>
           <Link
-            to="/wedding-images"
+            to="/rice-ceremony"
             className="bg-pink-600 hover:bg-pink-700 text-white font-semibold py-2 px-6 rounded-full shadow-lg transition duration-300"
           >
             👀 Take a Look

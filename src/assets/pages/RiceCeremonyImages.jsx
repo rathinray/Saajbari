@@ -1,11 +1,17 @@
 import React, { useState, useRef, useEffect } from "react";
-import weddingimage1 from "../images/wedding/rice1.jpeg";
-import weddingimage2 from "../images/wedding/rice2.jpeg";
-import weddingimage3 from "../images/wedding/rice3.jpeg";
-import weddingimage4 from "../images/wedding/rice4.jpeg";
-import weddingimage5 from "../images/wedding/rice5.jpeg";
-import weddingimage6 from "../images/wedding/rice6.jpeg";
-import Cover from "../images/wedding/rice7.jpeg";
+import img1 from "../images/wedding/rice1.jpeg";
+import img2 from "../images/wedding/rice2.jpeg";
+import img3 from "../images/wedding/rice3.jpeg";
+import img4 from "../images/wedding/rice4.jpeg";
+import img5 from "../images/wedding/rice5.jpeg";
+import img6 from "../images/wedding/rice6.jpeg";
+import img7 from "../images/wedding/rice7.jpeg";
+import img8 from "../images/wedding/rice8.jpeg";
+import img9 from "../images/wedding/rice9.jpeg";
+import img10 from "../images/wedding/rice10.jpeg";
+import img11 from "../images/wedding/rice11.jpeg";
+import img12 from "../images/wedding/rice12.jpeg";
+import img13 from "../images/wedding/rice13.jpeg";
 import Footer from "../components/Footer";
 
 // If using GSAP, import it. Otherwise, comment/remove the import.
@@ -14,33 +20,75 @@ import Footer from "../components/Footer";
 const galleryImages = [
   {
     id: 1,
-    src: weddingimage1,
-    alt: "Forever starts with you.",
-    category: "Pre-wedding",
+    src: img1,
+    alt: "A blessed beginning with the first grain of rice.",
+    category: "Rice Ceremony",
   },
   {
     id: 2,
-    src: weddingimage2,
-    alt: "Captured in a moment, destined for a lifetime.",
-    category: "Pre-wedding",
+    src: img2,
+    alt: "Tiny hands, big traditions, endless blessings.",
+    category: "Rice Ceremony",
   },
   {
     id: 3,
-    src: weddingimage3,
-    alt: "Stealing hearts before stealing last names.",
-    category: "Pre-wedding",
+    src: img3,
+    alt: "The joy of family woven into every moment.",
+    category: "Rice Ceremony",
   },
   {
     id: 4,
-    src: weddingimage4,
-    alt: "Warning: We bring too much cuteness together.",
-    category: "Pre-wedding",
+    src: img4,
+    alt: "Tradition meets celebration with a smile.",
+    category: "Rice Ceremony",
   },
   {
     id: 5,
-    src: weddingimage5,
-    alt: "You + Me = Forever",
-    category: "Pre-wedding",
+    src: img5,
+    alt: "Cherished moments of love and blessings.",
+    category: "Rice Ceremony",
+  },
+  {
+    id: 6,
+    src: img13,
+    alt: "A memory to treasure forever.",
+    category: "Rice Ceremony",
+  },
+  {
+    id: 7,
+    src: img7,
+    alt: "Blessings poured with every grain of rice.",
+    category: "Rice Ceremony",
+  },
+  {
+    id: 8,
+    src: img8,
+    alt: "A little one’s joy, a family’s happiness.",
+    category: "Rice Ceremony",
+  },
+  {
+    id: 9,
+    src: img12,
+    alt: "Tradition embraced with laughter and love.",
+    category: "Rice Ceremony",
+  },
+  {
+    id: 10,
+    src: img10,
+    alt: "Tiny hands, big blessings, endless smiles.",
+    category: "Rice Ceremony",
+  },
+  {
+    id: 11,
+    src: img11,
+    alt: "An unforgettable milestone celebrated together.",
+    category: "Rice Ceremony",
+  },
+  {
+    id: 12,
+    src: img9,
+    alt: "A day to remember, wrapped in love and tradition.",
+    category: "Rice Ceremony",
   },
 ];
 
@@ -128,15 +176,15 @@ const WeddingImages = () => {
     <div className="bg-gray-50 font-montserrat">
       {/* Hero Section */}
       <section
-        style={{ backgroundImage: `url(${Cover})` }}
+        style={{ backgroundImage: `url(${img6})` }}
         className="hero min-h-screen flex items-center justify-center text-center text-white px-4"
       >
         <div className="max-w-4xl mx-auto">
-          <h1 className="font-playfair text-4xl md:text-6xl lg:text-7xl font-bold mb-6 text-shadow">
-            Eternal Love Story
+          <h1 className="font-playfair text-4xl md:text-6xl lg:text-5xl font-bold mb-6 text-shadow">
+            Our Little One’s Rice Ceremony
           </h1>
           <p className="text-xl md:text-2xl mb-8 text-shadow max-w-2xl mx-auto">
-            Capturing the timeless moments of our journey together
+            A beautiful milestone filled with laughter, love, and blessings.
           </p>
           <div className="flex justify-center space-x-4">
             <button
@@ -179,7 +227,7 @@ const WeddingImages = () => {
       <header className="bg-white shadow-md sticky top-0 z-50">
         <div className="container mx-auto px-4 py-4 flex justify-between items-center">
           <h2 className="text-2xl font-playfair font-bold text-pink-600">
-            Rajesh & Moumita
+            Asmika’s Rice Ceremony
           </h2>
           <nav className="hidden md:block">
             <ul className="flex space-x-8">
@@ -297,12 +345,12 @@ const WeddingImages = () => {
         <section id="gallery" className="mb-16">
           <div className="text-center mb-12">
             <h2 className="font-playfair text-3xl md:text-4xl font-bold text-gray-800 mb-4">
-              Our Wedding Gallery
+              Rice Ceremony Gallery
             </h2>
             <div className="w-24 h-1 bg-pink-500 mx-auto"></div>
             <p className="text-gray-600 mt-6 max-w-2xl mx-auto">
-              Relive the magical moments from our special day through these
-              beautiful photographs
+              Celebrate the first grains of rice and the joy of blessings
+              through these treasured photographs.
             </p>
           </div>
           <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6">
@@ -331,7 +379,7 @@ const WeddingImages = () => {
         <section id="our-story" className="mb-16">
           <div className="text-center mb-12">
             <h2 className="font-playfair text-3xl md:text-4xl font-bold text-gray-800 mb-4">
-              Our Story
+              Our Rice Ceremony Story
             </h2>
             <div className="w-24 h-1 bg-pink-500 mx-auto"></div>
           </div>
@@ -341,23 +389,23 @@ const WeddingImages = () => {
               {/* Left Story */}
               <div>
                 <h3 className="text-2xl font-semibold text-gray-700 mb-4">
-                  How We Began
+                  A Cherished Tradition
                 </h3>
                 <p className="text-gray-600 leading-relaxed mb-4">
-                  Our journey started with a simple dream to create memorable
-                  moments. From the first step to now, every chapter has been
-                  filled with love, dedication, and countless smiles.
+                  This special day marks the very first taste of rice for our
+                  little one — a moment filled with joy, blessings, and the
+                  warmth of family.
                 </p>
                 <p className="text-gray-600 leading-relaxed">
-                  We believe in crafting stories that last forever and making
-                  every event uniquely yours.
+                  It is more than a tradition, it is a celebration of love,
+                  togetherness, and a milestone that we will treasure forever.
                 </p>
               </div>
 
               {/* Right Image */}
               <div className="flex justify-center">
                 <img
-                  src={weddingimage6}
+                  src={img3}
                   alt="Our Story"
                   className="rounded-2xl shadow-lg max-w-full h-auto"
                 />
