@@ -12,6 +12,11 @@ import img10 from "../images/wedding/rice10.jpeg";
 import img11 from "../images/wedding/rice11.jpeg";
 import img12 from "../images/wedding/rice12.jpeg";
 import img13 from "../images/wedding/rice13.jpeg";
+import img14 from "../images/wedding/rice14.jpg";
+import img15 from "../images/wedding/rice15.jpeg";
+import img16 from "../images/wedding/rice16.jpeg";
+import img17 from "../images/wedding/rice17.jpeg";
+import img18 from "../images/wedding/rice18.jpeg";
 import Footer from "../components/Footer";
 
 // If using GSAP, import it. Otherwise, comment/remove the import.
@@ -32,8 +37,9 @@ const galleryImages = [
   },
   {
     id: 3,
-    src: img3,
-    alt: "The joy of family woven into every moment.",
+
+    src: img18,
+    alt: "A joyous beginning filled with love and laughter.",
     category: "Rice Ceremony",
   },
   {
@@ -68,8 +74,9 @@ const galleryImages = [
   },
   {
     id: 9,
-    src: img12,
-    alt: "Tradition embraced with laughter and love.",
+
+    src: img15,
+    alt: "A celebration of life’s sweetest moments.",
     category: "Rice Ceremony",
   },
   {
@@ -88,6 +95,36 @@ const galleryImages = [
     id: 12,
     src: img9,
     alt: "A day to remember, wrapped in love and tradition.",
+    category: "Rice Ceremony",
+  },
+  {
+    id: 13,
+    src: img14,
+    alt: "The first taste of tradition and love.",
+    category: "Rice Ceremony",
+  },
+  {
+    id: 14,
+    src: img12,
+    alt: "Tradition embraced with laughter and love.",
+    category: "Rice Ceremony",
+  },
+  {
+    id: 15,
+    src: img16,
+    alt: "Family, tradition, and a little one’s joy.",
+    category: "Rice Ceremony",
+  },
+  {
+    id: 16,
+    src: img17,
+    alt: "Blessings in every grain, love in every smile.",
+    category: "Rice Ceremony",
+  },
+  {
+    id: 17,
+    src: img3,
+    alt: "The joy of family woven into every moment.",
     category: "Rice Ceremony",
   },
 ];
@@ -293,7 +330,7 @@ const WeddingImages = () => {
           <div className="container mx-auto px-4 py-6 flex flex-col space-y-4">
             <div className="flex justify-between">
               <h2 className="text-2xl font-playfair font-bold text-pink-600">
-                Rajesh & Moumita
+                Asmika’s Rice Ceremony
               </h2>
               <button
                 className="self-end text-gray-800 text-2xl focus:outline-none"

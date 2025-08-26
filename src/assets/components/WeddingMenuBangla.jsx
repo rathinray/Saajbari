@@ -62,7 +62,7 @@ const WeddingMenuBangla = () => {
         { name: "ছোট মাছের সবজি", description: "" },
         // { name: "পাবদা মাছ", description: "" },
         // { name: "ফ্রাইড রাইস", description: "" },
-        { name: "মাংস / মাছ", description: "" },
+        { name: "কাতল মাছ / মাছ", description: "" },
       ],
     },
 
