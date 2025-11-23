@@ -25,7 +25,8 @@ import WeddingImages from "./assets/pages/WeddingImages";
 import WeddingMenuBangla1 from "./assets/pages/WeddingMenuBangla1";
 import WeddingImagesGSAP from "./assets/pages/WeddingImagesGsap";
 import ImagesGallery from "./assets/pages/ImagesGallery";
-import RiceCeremonyImages from "./assets/pages/RiceCeremonyImages";
+// import RiceCeremonyImages from "./assets/pages/RiceCeremonyImages";
+import AadhaarCard from "./assets/pages/aadharCardMenu";
 
 function App() {
   useEffect(() => {
@@ -62,13 +63,13 @@ function App() {
         <Route path="/wedding-decoration" element={<WeddingDecoration />} />
         <Route path="/birthday-celebration" element={<BirthdayCelebration />} />
         <Route path="/corporate-events" element={<CorporateEvents />} />
-        <Route path="/catering-menu" element={<WeddingMenuBangla />} />
+        <Route path="/catering-menu" element={<MenuPage />} />
         <Route path="/bengali-wedding-menu" element={<BengaliWeddingMenu />} />
         <Route path="/wedding-images" element={<WeddingImages />} />
         <Route path="/wedding-menu-bangla1" element={<WeddingMenuBangla1 />} />
         <Route path="/wedding" element={<WeddingImagesGSAP />} />
         <Route path="/gallery" element={<ImagesGallery />} />
-        <Route path="/rice-ceremony" element={<RiceCeremonyImages />} />
+        {/* <Route path="/rice-ceremony" element={<RiceCeremonyImages />} /> */}
       </Routes>
     </HashRouter>
   );

@@ -1,133 +1,133 @@
 import React, { useState, useRef, useEffect } from "react";
-import img1 from "../images/wedding/rice1.jpeg";
-import img2 from "../images/wedding/rice2.jpeg";
-import img3 from "../images/wedding/rice3.jpeg";
-import img4 from "../images/wedding/rice4.jpeg";
-import img5 from "../images/wedding/rice5.jpeg";
-import img6 from "../images/wedding/rice6.jpeg";
-import img7 from "../images/wedding/rice7.jpeg";
-import img8 from "../images/wedding/rice8.jpeg";
-import img9 from "../images/wedding/rice9.jpeg";
-import img10 from "../images/wedding/rice10.jpeg";
-import img11 from "../images/wedding/rice11.jpeg";
-import img12 from "../images/wedding/rice12.jpeg";
-import img13 from "../images/wedding/rice13.jpeg";
-import img14 from "../images/wedding/rice14.jpg";
-import img15 from "../images/wedding/rice15.jpeg";
-import img16 from "../images/wedding/rice16.jpeg";
-import img17 from "../images/wedding/rice17.jpeg";
-import img18 from "../images/wedding/rice18.jpeg";
+// import img1 from "../images/wedding/rice1.jpeg";
+// import img2 from "../images/wedding/rice2.jpeg";
+// import img3 from "../images/wedding/rice3.jpeg";
+// import img4 from "../images/wedding/rice4.jpeg";
+// import img5 from "../images/wedding/rice5.jpeg";
+// import img6 from "../images/wedding/rice6.jpeg";
+// import img7 from "../images/wedding/rice7.jpeg";
+// import img8 from "../images/wedding/rice8.jpeg";
+// import img9 from "../images/wedding/rice9.jpeg";
+// import img10 from "../images/wedding/rice10.jpeg";
+// import img11 from "../images/wedding/rice11.jpeg";
+// import img12 from "../images/wedding/rice12.jpeg";
+// import img13 from "../images/wedding/rice13.jpeg";
+// import img14 from "../images/wedding/rice14.jpg";
+// import img15 from "../images/wedding/rice15.jpeg";
+// import img16 from "../images/wedding/rice16.jpeg";
+// import img17 from "../images/wedding/rice17.jpeg";
+// import img18 from "../images/wedding/rice18.jpeg";
 import Footer from "../components/Footer";
 
 // If using GSAP, import it. Otherwise, comment/remove the import.
 // import gsap from "gsap";
 
-const galleryImages = [
-  {
-    id: 1,
-    src: img1,
-    alt: "A blessed beginning with the first grain of rice.",
-    category: "Rice Ceremony",
-  },
-  {
-    id: 2,
-    src: img2,
-    alt: "Tiny hands, big traditions, endless blessings.",
-    category: "Rice Ceremony",
-  },
-  {
-    id: 3,
+// const galleryImages = [
+//   {
+//     id: 1,
+//     src: img1,
+//     alt: "A blessed beginning with the first grain of rice.",
+//     category: "Rice Ceremony",
+//   },
+//   {
+//     id: 2,
+//     src: img2,
+//     alt: "Tiny hands, big traditions, endless blessings.",
+//     category: "Rice Ceremony",
+//   },
+//   {
+//     id: 3,
 
-    src: img18,
-    alt: "A joyous beginning filled with love and laughter.",
-    category: "Rice Ceremony",
-  },
-  {
-    id: 4,
-    src: img4,
-    alt: "Tradition meets celebration with a smile.",
-    category: "Rice Ceremony",
-  },
-  {
-    id: 5,
-    src: img5,
-    alt: "Cherished moments of love and blessings.",
-    category: "Rice Ceremony",
-  },
-  {
-    id: 6,
-    src: img13,
-    alt: "A memory to treasure forever.",
-    category: "Rice Ceremony",
-  },
-  {
-    id: 7,
-    src: img7,
-    alt: "Blessings poured with every grain of rice.",
-    category: "Rice Ceremony",
-  },
-  {
-    id: 8,
-    src: img8,
-    alt: "A little one’s joy, a family’s happiness.",
-    category: "Rice Ceremony",
-  },
-  {
-    id: 9,
+//     src: img18,
+//     alt: "A joyous beginning filled with love and laughter.",
+//     category: "Rice Ceremony",
+//   },
+//   {
+//     id: 4,
+//     src: img4,
+//     alt: "Tradition meets celebration with a smile.",
+//     category: "Rice Ceremony",
+//   },
+//   {
+//     id: 5,
+//     src: img5,
+//     alt: "Cherished moments of love and blessings.",
+//     category: "Rice Ceremony",
+//   },
+//   {
+//     id: 6,
+//     src: img13,
+//     alt: "A memory to treasure forever.",
+//     category: "Rice Ceremony",
+//   },
+//   {
+//     id: 7,
+//     src: img7,
+//     alt: "Blessings poured with every grain of rice.",
+//     category: "Rice Ceremony",
+//   },
+//   {
+//     id: 8,
+//     src: img8,
+//     alt: "A little one’s joy, a family’s happiness.",
+//     category: "Rice Ceremony",
+//   },
+//   {
+//     id: 9,
 
-    src: img15,
-    alt: "A celebration of life’s sweetest moments.",
-    category: "Rice Ceremony",
-  },
-  {
-    id: 10,
-    src: img10,
-    alt: "Tiny hands, big blessings, endless smiles.",
-    category: "Rice Ceremony",
-  },
-  {
-    id: 11,
-    src: img11,
-    alt: "An unforgettable milestone celebrated together.",
-    category: "Rice Ceremony",
-  },
-  {
-    id: 12,
-    src: img9,
-    alt: "A day to remember, wrapped in love and tradition.",
-    category: "Rice Ceremony",
-  },
-  {
-    id: 13,
-    src: img14,
-    alt: "The first taste of tradition and love.",
-    category: "Rice Ceremony",
-  },
-  {
-    id: 14,
-    src: img12,
-    alt: "Tradition embraced with laughter and love.",
-    category: "Rice Ceremony",
-  },
-  {
-    id: 15,
-    src: img16,
-    alt: "Family, tradition, and a little one’s joy.",
-    category: "Rice Ceremony",
-  },
-  {
-    id: 16,
-    src: img17,
-    alt: "Blessings in every grain, love in every smile.",
-    category: "Rice Ceremony",
-  },
-  {
-    id: 17,
-    src: img3,
-    alt: "The joy of family woven into every moment.",
-    category: "Rice Ceremony",
-  },
-];
+//     src: img15,
+//     alt: "A celebration of life’s sweetest moments.",
+//     category: "Rice Ceremony",
+//   },
+//   {
+//     id: 10,
+//     src: img10,
+//     alt: "Tiny hands, big blessings, endless smiles.",
+//     category: "Rice Ceremony",
+//   },
+//   {
+//     id: 11,
+//     src: img11,
+//     alt: "An unforgettable milestone celebrated together.",
+//     category: "Rice Ceremony",
+//   },
+//   {
+//     id: 12,
+//     src: img9,
+//     alt: "A day to remember, wrapped in love and tradition.",
+//     category: "Rice Ceremony",
+//   },
+//   {
+//     id: 13,
+//     src: img14,
+//     alt: "The first taste of tradition and love.",
+//     category: "Rice Ceremony",
+//   },
+//   {
+//     id: 14,
+//     src: img12,
+//     alt: "Tradition embraced with laughter and love.",
+//     category: "Rice Ceremony",
+//   },
+//   {
+//     id: 15,
+//     src: img16,
+//     alt: "Family, tradition, and a little one’s joy.",
+//     category: "Rice Ceremony",
+//   },
+//   {
+//     id: 16,
+//     src: img17,
+//     alt: "Blessings in every grain, love in every smile.",
+//     category: "Rice Ceremony",
+//   },
+//   {
+//     id: 17,
+//     src: img3,
+//     alt: "The joy of family woven into every moment.",
+//     category: "Rice Ceremony",
+//   },
+// ];
 
 const WeddingImages = () => {
   const [lightboxOpen, setLightboxOpen] = useState(false);
@@ -212,7 +212,7 @@ const WeddingImages = () => {
   return (
     <div className="bg-gray-50 font-montserrat">
       {/* Hero Section */}
-      <section
+      {/* <section
         style={{ backgroundImage: `url(${img6})` }}
         className="hero min-h-screen flex items-center justify-center text-center text-white px-4"
       >
@@ -255,13 +255,13 @@ const WeddingImages = () => {
             </a>
           </div>
         </div>
-      </section>
+      </section> */}
 
       {/*
         Mobile menu state and handler
       */}
 
-      <header className="bg-white shadow-md sticky top-0 z-50">
+      {/* <header className="bg-white shadow-md sticky top-0 z-50">
         <div className="container mx-auto px-4 py-4 flex justify-between items-center">
           <h2 className="text-2xl font-playfair font-bold text-pink-600">
             Asmika’s Rice Ceremony
@@ -313,7 +313,6 @@ const WeddingImages = () => {
             <i className="fas fa-bars text-2xl"></i>
           </button>
         </div>
-        {/* Mobile Menu */}
         <div
           ref={mobileMenuRef}
           className={`md:hidden fixed top-0 left-0 w-full bg-white shadow-lg z-50 overflow-hidden transition-all duration-400 ease-in-out
@@ -354,7 +353,7 @@ const WeddingImages = () => {
                 if (gallerySection) {
                   gallerySection.scrollIntoView({ behavior: "smooth" });
                 }
-                setIsMobileMenuOpen(false); // Close mobile menu after scrolling
+                setIsMobileMenuOpen(false);
               }}
               className="block text-lg text-gray-800 hover:text-pink-600 transition py-2"
             >
@@ -375,7 +374,7 @@ const WeddingImages = () => {
             </a>
           </div>
         </div>
-      </header>
+      </header> */}
 
       <main className="container mx-auto px-4 py-12">
         {/* Gallery Section */}

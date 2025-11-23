@@ -1,11 +1,20 @@
 import React, { useState, useRef, useEffect } from "react";
-import weddingimage1 from "../images/wedding/rice1.jpeg";
-import weddingimage2 from "../images/wedding/rice2.jpeg";
-import weddingimage3 from "../images/wedding/rice3.jpeg";
-import weddingimage4 from "../images/wedding/rice4.jpeg";
-import weddingimage5 from "../images/wedding/rice5.jpeg";
-import weddingimage6 from "../images/wedding/rice6.jpeg";
-import Cover from "../images/wedding/rice7.jpeg";
+import weddingimage1 from "../images/wedding/rice-1.jpg";
+import weddingimage2 from "../images/wedding/rice (2).jpeg";
+import weddingimage3 from "../images/wedding/rice (3).jpeg";
+import weddingimage4 from "../images/wedding/rice (4).jpeg";
+import weddingimage5 from "../images/wedding/rice (5).jpeg";
+import weddingimage6 from "../images/wedding/rice (6).jpeg";
+import weddingimage7 from "../images/wedding/rice (7).jpeg";
+import weddingimage8 from "../images/wedding/rice (8).jpeg";
+import weddingimage9 from "../images/wedding/rice (9).jpeg";
+import weddingimage10 from "../images/wedding/rice (10).jpeg";
+import weddingimage11 from "../images/wedding/rice (11).jpeg";
+import weddingimage12 from "../images/wedding/rice (12).jpeg";
+import weddingimage13 from "../images/wedding/rice (13).jpeg";
+import weddingimage14 from "../images/wedding/rice (14).jpeg";
+import weddingimage15 from "../images/wedding/rice (1).jpeg";
+import Cover from "../images/wedding/rice-1.jpg";
 import Footer from "../components/Footer";
 
 // If using GSAP, import it. Otherwise, comment/remove the import.
@@ -15,31 +24,85 @@ const galleryImages = [
   {
     id: 1,
     src: weddingimage1,
-    alt: "Forever starts with you.",
+    alt: "পথচলা শুরু হোক প্রেমের আলোয়।",
     category: "Pre-wedding",
   },
   {
     id: 2,
     src: weddingimage2,
-    alt: "Captured in a moment, destined for a lifetime.",
+    alt: " আজ, আগামীকাল, সারাজীবন— তুমি-আমি একসাথে।",
     category: "Pre-wedding",
   },
   {
     id: 3,
     src: weddingimage3,
-    alt: "Stealing hearts before stealing last names.",
+    alt: "আজকে আমি, কাল থেকে আমরা।",
     category: "Pre-wedding",
   },
   {
     id: 4,
     src: weddingimage4,
-    alt: "Warning: We bring too much cuteness together.",
+    alt: "স্বপ্নগুলো আজ একটু বেশি সত্যি মনে হয়।",
     category: "Pre-wedding",
   },
   {
     id: 5,
     src: weddingimage5,
-    alt: "You + Me = Forever",
+    alt: "প্রতিটা মুহূর্তে তোমাতে ভরসা, তোমাতে ভালোবাসা।",
+    category: "Pre-wedding",
+  },
+  {
+    id: 6,
+    src: weddingimage8,
+    alt: "মনের মানুষটির কাছে আজ আরও এক ধাপ এগিয়ে।",
+    category: "Pre-wedding",
+  },
+  {
+    id: 7,
+    src: weddingimage9,
+    alt: "নিজের মানুষকে পেতে চলেছি… হৃদয়টা আজ একটু নরম।",
+    category: "Pre-wedding",
+  },
+  {
+    id: 8,
+    src: weddingimage10,
+    alt: "আজ আমি… তার হৃদয়ের রানী।",
+    category: "Pre-wedding",
+  },
+  {
+    id: 9,
+    src: weddingimage11,
+    alt: "আজ একটু বেশি দায়িত্ব… আর অনেকটা ভালোবাসা।",
+    category: "Pre-wedding",
+  },
+  {
+    id: 10,
+    src: weddingimage12,
+    alt: "চোখে উৎসব, মনে শান্তি… কারণ সে আসছে।",
+    category: "Pre-wedding",
+  },
+  {
+    id: 11,
+    src: weddingimage13,
+    alt: "আজকের হাসিটা আমার, কারণ সে আমার।",
+    category: "Pre-wedding",
+  },
+  {
+    id: 12,
+    src: weddingimage14,
+    alt: "চোখে লাজুক স্বপ্ন… মনে হাজারো কথা।",
+    category: "Pre-wedding",
+  },
+  {
+    id: 13,
+    src: weddingimage15,
+    alt: "তার হাতটা ধরার অপেক্ষায়।",
+    category: "Pre-wedding",
+  },
+  {
+    id: 14,
+    src: weddingimage7,
+    alt: "নিজেকে সাজিয়েছি, তাকে পেতে…",
     category: "Pre-wedding",
   },
 ];
@@ -125,7 +188,7 @@ const WeddingImages = () => {
   };
 
   return (
-    <div className="bg-gray-50 font-montserrat">
+    <div className="font-montserrat">
       {/* Hero Section */}
       <section
         style={{ backgroundImage: `url(${Cover})` }}
@@ -179,7 +242,7 @@ const WeddingImages = () => {
       <header className="bg-white shadow-md sticky top-0 z-50">
         <div className="container mx-auto px-4 py-4 flex justify-between items-center">
           <h2 className="text-2xl font-playfair font-bold text-pink-600">
-            Rajesh & Moumita
+            Sutrisna & Subhajit
           </h2>
           <nav className="hidden md:block">
             <ul className="flex space-x-8">
@@ -245,7 +308,7 @@ const WeddingImages = () => {
           <div className="container mx-auto px-4 py-6 flex flex-col space-y-4">
             <div className="flex justify-between">
               <h2 className="text-2xl font-playfair font-bold text-pink-600">
-                Rajesh & Moumita
+                Sutrisna & Subhajit
               </h2>
               <button
                 className="self-end text-gray-800 text-2xl focus:outline-none"
@@ -318,7 +381,9 @@ const WeddingImages = () => {
                   className="w-full h-64 object-cover"
                 />
                 <div className="p-4">
-                  <p className="text-gray-800 font-medium">{image.alt}</p>
+                  <p className="text-gray-800 font-medium text-bengoli">
+                    {image.alt}
+                  </p>
                   <span className="inline-block mt-2 px-3 py-1 bg-pink-100 text-pink-800 text-xs rounded-full">
                     {image.category}
                   </span>
