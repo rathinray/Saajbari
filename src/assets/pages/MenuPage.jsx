@@ -1,9 +1,9 @@
 import React, { useState } from "react";
 import { User, Calendar, MapPin } from "lucide-react";
 import Couple from "../images/couple.jpeg";
-import QRCodePng from "../images/qrcode.png";
+import QRCodePng from "../images/qr-code-fb.png";
 
-export default function AadhaarCard() {
+export default function MenuPage() {
   const [isFlipped, setIsFlipped] = useState(false);
 
   return (
@@ -86,7 +86,17 @@ export default function AadhaarCard() {
 
                   {/* Right Side - QR Code */}
                   <span className="">
-                    <img src={QRCodePng} alt="QR Code" className="w-30 h-30" />
+                    <a
+                      href="https://www.facebook.com/share/1A9kruUMYA/"
+                      target="_blank"
+                      rel="noopener noreferrer"
+                    >
+                      <img
+                        src={QRCodePng}
+                        alt="QR Code"
+                        className="w-30 h-30"
+                      />
+                    </a>
                   </span>
                 </div>
                 <div className="mt-3 md:mt-4 text-xl text-gray-600 text-center">
@@ -146,7 +156,17 @@ export default function AadhaarCard() {
 
                   {/* QR Code */}
                   <div className="w-20 h-20 rounded flex items-center justify-center">
-                    <img src={QRCodePng} alt="QR Code" className="w-20 h-20" />
+                    <a
+                      href="https://www.facebook.com/share/1A9kruUMYA/"
+                      target="_blank"
+                      rel="noopener noreferrer"
+                    >
+                      <img
+                        src={QRCodePng}
+                        alt="QR Code"
+                        className="w-20 h-20"
+                      />
+                    </a>
                   </div>
                 </div>
 
