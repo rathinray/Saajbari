@@ -1,4 +1,6 @@
+@import url("https://fonts.googleapis.com/css2?family=Playfair+Display:wght@600;700&family=Inter:wght@300;400;500&display=swap");
 @import "tailwindcss";
+
 html {
   scroll-behavior: smooth;
 }
@@ -320,4 +322,14 @@ html {
     width: 30px;
     height: 30px;
   }
+}
+
+.font-serif {
+  font-family: "Playfair Display", serif;
+}
+
+/* App-like feel */
+body {
+  -webkit-tap-highlight-color: transparent;
+  overscroll-behavior: none;
 }

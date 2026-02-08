@@ -1,5 +1,5 @@
 import React, { useState, useRef, useEffect } from "react";
-import weddingimage1 from "../images/wedding/rice-1.jpg";
+import weddingimage1 from "../images/wedding/rice (15).jpeg";
 import weddingimage2 from "../images/wedding/rice (2).jpeg";
 import weddingimage3 from "../images/wedding/rice (3).jpeg";
 import weddingimage4 from "../images/wedding/rice (4).jpeg";
@@ -14,7 +14,7 @@ import weddingimage12 from "../images/wedding/rice (12).jpeg";
 import weddingimage13 from "../images/wedding/rice (13).jpeg";
 import weddingimage14 from "../images/wedding/rice (14).jpeg";
 import weddingimage15 from "../images/wedding/rice (1).jpeg";
-import Cover from "../images/wedding/rice-1.jpg";
+import Cover from "../images/wedding/rice (15).jpeg";
 import Footer from "../components/Footer";
 
 // If using GSAP, import it. Otherwise, comment/remove the import.
@@ -130,11 +130,11 @@ const WeddingImages = () => {
     };
     const anchors = document.querySelectorAll('a[href^="#"]');
     anchors.forEach((anchor) =>
-      anchor.addEventListener("click", handleAnchorClick)
+      anchor.addEventListener("click", handleAnchorClick),
     );
     return () => {
       anchors.forEach((anchor) =>
-        anchor.removeEventListener("click", handleAnchorClick)
+        anchor.removeEventListener("click", handleAnchorClick),
       );
     };
   }, []);
@@ -308,7 +308,7 @@ const WeddingImages = () => {
           <div className="container mx-auto px-4 py-6 flex flex-col space-y-4">
             <div className="flex justify-between">
               <h2 className="text-2xl font-playfair font-bold text-pink-600">
-                Rajesh & Moumita
+                Anamika & Dipayan
               </h2>
               <button
                 className="self-end text-gray-800 text-2xl focus:outline-none"

@@ -1,5 +1,5 @@
 import React, { useState, useRef, useEffect } from "react";
-import weddingimage1 from "../images/wedding/rice-1.jpg";
+import weddingimage1 from "../images/wedding/rice (1).jpeg";
 import weddingimage2 from "../images/wedding/rice (2).jpeg";
 import weddingimage3 from "../images/wedding/rice (3).jpeg";
 import weddingimage4 from "../images/wedding/rice (4).jpeg";
@@ -13,12 +13,32 @@ import weddingimage11 from "../images/wedding/rice (11).jpeg";
 import weddingimage12 from "../images/wedding/rice (12).jpeg";
 import weddingimage13 from "../images/wedding/rice (13).jpeg";
 import weddingimage14 from "../images/wedding/rice (14).jpeg";
-import weddingimage15 from "../images/wedding/rice (1).jpeg";
-import Cover from "../images/wedding/rice-1.jpg";
-import Footer from "../components/Footer";
+import weddingimage15 from "../images/wedding/rice (15).jpeg";
+import weddingimage16 from "../images/wedding/rice (16).jpeg";
+import weddingimage17 from "../images/wedding/rice (17).jpeg";
+import weddingimage18 from "../images/wedding/rice (18).jpeg";
+import weddingimage19 from "../images/wedding/rice (19).jpeg";
+import weddingimage20 from "../images/wedding/rice (20).jpeg";
+import weddingimage21 from "../images/wedding/rice (21).jpeg";
+import weddingimage22 from "../images/wedding/rice (22).jpeg";
+import weddingimage23 from "../images/wedding/rice (23).jpeg";
+import weddingimage24 from "../images/wedding/rice (24).jpeg";
+import weddingimage25 from "../images/wedding/rice (25).jpeg";
+import weddingimage26 from "../images/wedding/rice (26).jpeg";
+import weddingimage27 from "../images/wedding/rice (27).jpeg";
+import weddingimage28 from "../images/wedding/rice (28).jpeg";
+import weddingimage29 from "../images/wedding/rice (29).jpeg";
+import weddingimage30 from "../images/wedding/rice (30).jpeg";
+import weddingimage31 from "../images/wedding/rice (31).jpeg";
+import weddingimage32 from "../images/wedding/rice (32).jpeg";
+import weddingimage33 from "../images/wedding/rice (33).jpeg";
+import weddingimage34 from "../images/wedding/rice (34).jpeg";
+import weddingimage35 from "../images/wedding/rice (35).jpeg";
+import weddingimage36 from "../images/wedding/rice (36).jpeg";
 
-// If using GSAP, import it. Otherwise, comment/remove the import.
-// import gsap from "gsap";
+import Cover from "../images/wedding/cover.jpeg";
+
+import Footer from "../components/Footer";
 
 const galleryImages = [
   {
@@ -30,7 +50,7 @@ const galleryImages = [
   {
     id: 2,
     src: weddingimage2,
-    alt: " আজ, আগামীকাল, সারাজীবন— তুমি-আমি একসাথে।",
+    alt: "আজ, আগামীকাল, সারাজীবন— তুমি-আমি একসাথে।",
     category: "Pre-wedding",
   },
   {
@@ -51,59 +71,199 @@ const galleryImages = [
     alt: "প্রতিটা মুহূর্তে তোমাতে ভরসা, তোমাতে ভালোবাসা।",
     category: "Pre-wedding",
   },
+
   {
     id: 6,
-    src: weddingimage8,
+    src: weddingimage6,
     alt: "মনের মানুষটির কাছে আজ আরও এক ধাপ এগিয়ে।",
     category: "Pre-wedding",
   },
   {
     id: 7,
-    src: weddingimage9,
+    src: weddingimage7,
     alt: "নিজের মানুষকে পেতে চলেছি… হৃদয়টা আজ একটু নরম।",
     category: "Pre-wedding",
   },
+
   {
     id: 8,
-    src: weddingimage10,
+    src: weddingimage8,
     alt: "আজ আমি… তার হৃদয়ের রানী।",
     category: "Pre-wedding",
   },
   {
     id: 9,
-    src: weddingimage11,
+    src: weddingimage9,
     alt: "আজ একটু বেশি দায়িত্ব… আর অনেকটা ভালোবাসা।",
     category: "Pre-wedding",
   },
   {
     id: 10,
-    src: weddingimage12,
+    src: weddingimage10,
     alt: "চোখে উৎসব, মনে শান্তি… কারণ সে আসছে।",
     category: "Pre-wedding",
   },
   {
     id: 11,
-    src: weddingimage13,
+    src: weddingimage11,
     alt: "আজকের হাসিটা আমার, কারণ সে আমার।",
     category: "Pre-wedding",
   },
   {
     id: 12,
-    src: weddingimage14,
+    src: weddingimage12,
     alt: "চোখে লাজুক স্বপ্ন… মনে হাজারো কথা।",
     category: "Pre-wedding",
   },
   {
     id: 13,
-    src: weddingimage15,
+    src: weddingimage13,
     alt: "তার হাতটা ধরার অপেক্ষায়।",
     category: "Pre-wedding",
   },
+
+  {
+    id: 15,
+    src: weddingimage15,
+    alt: "ভালোবাসার পথে আজ একসাথে প্রথম পা।",
+    category: "Pre-wedding",
+  },
+  {
+    id: 16,
+    src: weddingimage16,
+    alt: "নীরবতায়ও আজ কথা বলে আমাদের মন।",
+    category: "Pre-wedding",
+  },
+  {
+    id: 17,
+    src: weddingimage17,
+    alt: "প্রেমের গল্পটা আজ আরও গভীর।",
+    category: "Pre-wedding",
+  },
+  {
+    id: 18,
+    src: weddingimage18,
+    alt: "দু’টি হৃদয়, একটাই স্বপ্ন।",
+    category: "Pre-wedding",
+  },
+  {
+    id: 19,
+    src: weddingimage19,
+    alt: "ভালোবাসার রঙে রাঙানো এক নতুন শুরু।",
+    category: "Pre-wedding",
+  },
+  {
+    id: 20,
+    src: weddingimage20,
+    alt: "আজ থেকে আমরা, চিরদিনের জন্য।",
+    category: "Pre-wedding",
+  },
+  {
+    id: 21,
+    src: weddingimage21,
+    alt: "এই বন্ধনটা আজীবনের।",
+    category: "Pre-wedding",
+  },
+  {
+    id: 22,
+    src: weddingimage22,
+    alt: "ভালোবাসার এই গল্প চিরকাল থাকুক।",
+    category: "Pre-wedding",
+  },
+  {
+    id: 23,
+    src: weddingimage23,
+    alt: "ভালোবাসার এই বন্ধন অটুট থাকুক।",
+    category: "wedding",
+  },
+
+  {
+    id: 24,
+    src: weddingimage24,
+    alt: "দু’টি হৃদয়ের গল্প আজ চিরকালের।",
+    category: "wedding",
+  },
+
+  {
+    id: 25,
+    src: weddingimage25,
+    alt: "এই ভালোবাসা সময়ের সীমানা পেরিয়ে যাক।",
+    category: "wedding",
+  },
+
+  {
+    id: 26,
+    src: weddingimage26,
+    alt: "ভালোবাসায় বাঁধা দুটি প্রাণ।",
+    category: "wedding",
+  },
   {
     id: 14,
-    src: weddingimage7,
+    src: weddingimage14,
     alt: "নিজেকে সাজিয়েছি, তাকে পেতে…",
     category: "Pre-wedding",
+  },
+
+  {
+    id: 27,
+    src: weddingimage27,
+    alt: "একসাথে থাকার প্রতিশ্রুতি আজীবনের।",
+    category: "wedding",
+  },
+
+  {
+    id: 28,
+    src: weddingimage28,
+    alt: "ভালোবাসার শুরু, আজীবনের পথচলা।",
+    category: "wedding",
+  },
+  {
+    id: 29,
+    src: weddingimage29,
+    alt: "ভালোবাসার এই শুরু শেষহীন হোক।",
+    category: "wedding",
+  },
+  {
+    id: 30,
+    src: weddingimage30,
+    alt: "এই ভালোবাসা চিরকাল আলো ছড়াক।",
+    category: "wedding",
+  },
+  {
+    id: 31,
+    src: weddingimage31,
+    alt: "দু’জন থেকে আমরা—এই গল্প চিরন্তন হোক।",
+    category: "wedding",
+  },
+  {
+    id: 32,
+    src: weddingimage32,
+    alt: "ভালোবাসার এই প্রতিশ্রুতি অটুট থাকুক।",
+    category: "wedding",
+  },
+  {
+    id: 33,
+    src: weddingimage33,
+    alt: "এই বন্ধনে ভরে উঠুক সারাজীবন।",
+    category: "wedding",
+  },
+  {
+    id: 34,
+    src: weddingimage34,
+    alt: "ভালোবাসার এই পথচলা অনন্ত হোক।",
+    category: "wedding",
+  },
+  {
+    id: 35,
+    src: weddingimage35,
+    alt: "এই ভালোবাসা সময়ের সাথে আরও গভীর হোক।",
+    category: "wedding",
+  },
+  {
+    id: 36,
+    src: weddingimage36,
+    alt: "ভালোবাসার এই গল্প শেষহীন থাকুক।",
+    category: "wedding",
   },
 ];
 
@@ -130,11 +290,11 @@ const WeddingImages = () => {
     };
     const anchors = document.querySelectorAll('a[href^="#"]');
     anchors.forEach((anchor) =>
-      anchor.addEventListener("click", handleAnchorClick)
+      anchor.addEventListener("click", handleAnchorClick),
     );
     return () => {
       anchors.forEach((anchor) =>
-        anchor.removeEventListener("click", handleAnchorClick)
+        anchor.removeEventListener("click", handleAnchorClick),
       );
     };
   }, []);
@@ -186,6 +346,7 @@ const WeddingImages = () => {
       closeLightbox();
     }
   };
+  const shuffledImages = [...galleryImages].sort(() => Math.random() - 0.5);
 
   return (
     <div className="font-montserrat">
@@ -242,7 +403,7 @@ const WeddingImages = () => {
       <header className="bg-white shadow-md sticky top-0 z-50">
         <div className="container mx-auto px-4 py-4 flex justify-between items-center">
           <h2 className="text-2xl font-playfair font-bold text-pink-600">
-            Sutrisna & Subhajit
+            Anamika & Dipayan
           </h2>
           <nav className="hidden md:block">
             <ul className="flex space-x-8">
@@ -308,7 +469,7 @@ const WeddingImages = () => {
           <div className="container mx-auto px-4 py-6 flex flex-col space-y-4">
             <div className="flex justify-between">
               <h2 className="text-2xl font-playfair font-bold text-pink-600">
-                Sutrisna & Subhajit
+                Anamika & Dipayan
               </h2>
               <button
                 className="self-end text-gray-800 text-2xl focus:outline-none"
@@ -369,7 +530,7 @@ const WeddingImages = () => {
             </p>
           </div>
           <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6">
-            {galleryImages.map((image) => (
+            {shuffledImages.map((image) => (
               <div
                 key={image.id}
                 className="gallery-item bg-white rounded-lg shadow-md overflow-hidden cursor-pointer"
@@ -378,6 +539,7 @@ const WeddingImages = () => {
                 <img
                   src={image.src}
                   alt={image.alt}
+                  loading="lazy"
                   className="w-full h-64 object-cover"
                 />
                 <div className="p-4">
@@ -409,13 +571,26 @@ const WeddingImages = () => {
                   How We Began
                 </h3>
                 <p className="text-gray-600 leading-relaxed mb-4">
-                  Our journey started with a simple dream to create memorable
-                  moments. From the first step to now, every chapter has been
-                  filled with love, dedication, and countless smiles.
+                  Every love story is beautiful, but ours is our favorite.
+                </p>
+                <p className="text-gray-600 leading-relaxed mb-4">
+                  What started as a simple hello slowly turned into countless
+                  conversations, shared laughter, and unforgettable memories.
+                  From late-night talks to spontaneous trips, every moment
+                  brought us closer and showed us what love truly means.
                 </p>
                 <p className="text-gray-600 leading-relaxed">
-                  We believe in crafting stories that last forever and making
-                  every event uniquely yours.
+                  We’ve grown together, supported each other through every high
+                  and low, and found comfort in the little things—holding hands,
+                  shared smiles, and dreams about the future. Through every
+                  chapter, one thing remained constant: we knew we were meant to
+                  walk this journey together.
+                </p>
+                <p className="text-gray-600 leading-relaxed">
+                  Now, as we begin a new chapter of our lives, we’re excited to
+                  celebrate our love with all the people who mean the most to
+                  us. Thank you for being part of our story and for sharing in
+                  the joy of our forever.
                 </p>
               </div>
 

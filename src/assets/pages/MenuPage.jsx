@@ -1,6 +1,6 @@
 import React, { useState } from "react";
 import { User, Calendar, MapPin } from "lucide-react";
-import Couple from "../images/couple.jpeg";
+import Couple from "../images/wedding/rice (18).jpeg";
 import QRCodePng from "../images/qr-code-fb.png";
 
 export default function MenuPage() {
@@ -48,7 +48,7 @@ export default function MenuPage() {
               {/* Green Header */}
               <div className="bg-gradient-to-r from-green-600 to-green-700 p-3 text-center">
                 <p className="text-white font-semibold text-xl md:text-sm text-bengoli">
-                  সুতৃষ্ণা ও শুভজিৎ এর শুভ পরিণয়{" "}
+                  দীপায়ন ও অনামিকা এর শুভ পরিণয়{" "}
                 </p>
                 <p className="text-white text-xs">
                   Unique Identification Authority of Marriage
@@ -57,7 +57,7 @@ export default function MenuPage() {
 
               {/* Main Content */}
               <div className="p-6">
-                <p className="text-xl md:text-xs text-gray-600 mb-2 text-bengoli text-center">
+                <p className="text-xl md:text-xs text-gray-600 mb-2 text-bengoli text-center border-b border-amber-200">
                   আয়োজিত পদাবলী{" "}
                 </p>
                 <div className="flex">
@@ -65,19 +65,31 @@ export default function MenuPage() {
 
                   <div className="flex-1">
                     <div className="space-y-0.5 md:space-y-1 text-xl md:text-sm text-bengoli font-bold">
+                      {/* <p className="text-xl md:text-xs text-gray-600 mb-2">
+                        স্টাটার
+                      </p> */}
+                      <ul className="list-disc ml-5 mb-2">
+                        <li>ফুচকা </li>
+                        <li>কফি </li>
+                        <li>ভেজ পাকোড়া</li>
+                      </ul>
+                      <div className="h-[1px] bg-amber-100 w-56"></div>
                       <ul className="list-disc ml-5">
-                        <li>মিনারেল ওয়াটার বোতল</li>
                         <li>লেবু</li>
                         <li>সালাদ</li>
+                        <li>বেবি নান</li>
+                        <li>স্টাফ আলু</li>
                         <li>আলুর চিপস</li>
+                        <li>ফ্রাইড রাইস</li>
+                        <li>ছোলার ডাল</li>
+                        <li>নবরত্ন</li>
                         <li>সাদা ভাত</li>
-                        <li>মুসুর ডাল</li>
-                        <li>সবজি / ছেঁচড়া</li>
-                        <li>দই কাতলা</li>
-                        <li>মাংস</li>
+                        <li>পাবদা</li>
+                        <li>মাংস/মাছ</li>
                         <li>চাটনি</li>
+                        <li>পাপড়ভাজা</li>
                         <li>দই</li>
-                        <li>দুধ চমচম</li>
+                        <li>রসগোল্লা </li>
                         <li>সন্দেশ</li>
                         <li>মুখশুদ্ধি</li>
                       </ul>
@@ -140,13 +152,13 @@ export default function MenuPage() {
                   {/* Details */}
                   <div className="flex-1 text-bengoli">
                     <h3 className="font-bold text-lg mb-1 text-bengoli">
-                      সুতৃষ্ণা ও শুভজিৎ
+                      দীপায়ন ও অনামিকা
                     </h3>
-                    <p className="text-sm mb-1">Sutrisna with Subhajit</p>
+                    <p className="text-sm mb-1">Anamika with Dipayan</p>
                     <div className="space-y-2 text-sm">
                       <div className="flex items-center gap-2">
                         <Calendar className="w-4 h-4 text-orange-600" />
-                        <span>তারিখ: 28/11/2025</span>
+                        <span>তারিখ: 06/02/2026</span>
                       </div>
                       <div className="flex items-center gap-2">
                         <span>বিবাহিত / Married</span>
@@ -179,8 +191,8 @@ export default function MenuPage() {
 
                 {/* Additional Info */}
                 <div className="mt-4 space-y-2 text-sm text-gray-700 text-bengoli">
-                  <p>📍 Address: নিজ বাসভবন — বাউল</p>
-                  <p>🕐 Time: 7:15 PM onwards</p>
+                  <p>📍 Address: পতিরাম উৎসব ভবন (দক্ষিণায়ন)</p>
+                  <p>🕐 Time: 7:00 PM onwards</p>
                 </div>
               </div>
 
