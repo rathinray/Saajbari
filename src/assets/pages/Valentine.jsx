@@ -137,7 +137,7 @@ function CongratsScreen() {
             animate={{ opacity: 1 }}
             transition={{ delay: 0.4 }}
           >
-            You're officially my Valentine 💕
+            You're officially my Valentinee 💕
           </motion.p>
 
           {/* Couple Picture with Glow Effect */}
