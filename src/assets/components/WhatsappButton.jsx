@@ -1,5 +1,5 @@
 import React from "react";
-import WhatsappIcon from "../images/icons/Whatsapp.svg";
+import WhatsappIcon from "../images/icons/WhatsApp.svg";
 
 /**
  * WhatsAppFloatingButton
