@@ -28,6 +28,7 @@ import ImagesGallery from "./assets/pages/ImagesGallery";
 // import RiceCeremonyImages from "./assets/pages/RiceCeremonyImages";
 import AadhaarCard from "./assets/pages/aadharCardMenu";
 import WeddingReception from "./assets/pages/WeddingReception";
+import Valentine from "./assets/pages/Valentine";
 
 function App() {
   useEffect(() => {
@@ -66,6 +67,7 @@ function App() {
         <Route path="/corporate-events" element={<CorporateEvents />} />
         <Route path="/catering-menu" element={<WeddingReception />} />
         <Route path="/menu" element={<MenuPage />} />
+        <Route path="/valentine" element={<Valentine />} />
 
         <Route path="/bengali-wedding-menu" element={<BengaliWeddingMenu />} />
         <Route path="/wedding-images" element={<WeddingImages />} />
